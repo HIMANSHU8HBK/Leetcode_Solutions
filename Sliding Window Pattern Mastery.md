@@ -1,5 +1,7 @@
 # Sliding Window Pattern Mastery
 
+LeetCode problem list: https://leetcode.com/problem-list/sliding-window/
+
 A practical notes document for studying the Sliding Window pattern on LeetCode.
 
 > Sliding Window is a specialized two-pointer technique for maintaining a contiguous range while updating its state incrementally. Problems overlap with strings, arrays, frequency maps, prefix sums, and monotonic queues, so each problem is grouped by the primary idea it teaches.

@@ -1,5 +1,7 @@
 # Recursion Pattern Mastery
 
+LeetCode problem list: https://leetcode.com/problem-list/recursion/
+
 A practical notes document for studying Recursion and its major sub-patterns on LeetCode.
 
 > Recursion solves a problem by solving smaller instances of the same problem. The most important discipline is to define a correct base case, make measurable progress toward it, and trust the recursive call to solve the smaller instance.
@@ -845,3 +847,56 @@ Current mapped inventory:
 - 0 unsolved entries in the current file
 
 When a larger Recursion problem export is supplied, new problems can be appended as a numbered backlog and solved one by one in the same format.
+
+---
+
+## 10. Remaining problems from the attached Recursion list
+
+These 46 problems were present in the attachment but do not yet have direct solutions above. They are listed here as the next solution backlog. Existing solved problems are intentionally excluded.
+
+- [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) - Medium
+- [10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) - Hard
+- [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) - Easy
+- [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) - Medium
+- [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) - Hard
+- [44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) - Hard
+- [60. Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) - Hard
+- [143. Reorder List](https://leetcode.com/problems/reorder-list/) - Medium
+- [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) - Easy
+- [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) - Easy
+- [224. Basic Calculator](https://leetcode.com/problems/basic-calculator/) - Hard
+- [233. Number of Digit One](https://leetcode.com/problems/number-of-digit-one/) - Hard
+- [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) - Easy
+- [247. Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/) - Medium
+- [248. Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii/) - Hard
+- [255. Verify Preorder Sequence in Binary Search Tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/) - Medium
+- [273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/) - Hard
+- [326. Power of Three](https://leetcode.com/problems/power-of-three/) - Easy
+- [342. Power of Four](https://leetcode.com/problems/power-of-four/) - Easy
+- [390. Elimination Game](https://leetcode.com/problems/elimination-game/) - Medium
+- [394. Decode String](https://leetcode.com/problems/decode-string/) - Medium
+- [439. Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/) - Medium
+- [486. Predict the Winner](https://leetcode.com/problems/predict-the-winner/) - Medium
+- [544. Output Contest Matches](https://leetcode.com/problems/output-contest-matches/) - Medium
+- [736. Parse Lisp Expression](https://leetcode.com/problems/parse-lisp-expression/) - Hard
+- [770. Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) - Hard
+- [772. Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/) - Hard
+- [776. Split BST](https://leetcode.com/problems/split-bst/) - Medium
+- [894. All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/) - Medium
+- [1106. Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression/) - Hard
+- [1265. Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse/) - Medium
+- [1545. Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/) - Medium
+- [1611. Minimum One Bit Operations to Make Integers Zero](https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/) - Hard
+- [1808. Maximize Number of Nice Divisors](https://leetcode.com/problems/maximize-number-of-nice-divisors/) - Hard
+- [1823. Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game/) - Medium
+- [1922. Count Good Numbers](https://leetcode.com/problems/count-good-numbers/) - Medium
+- [1969. Minimum Non-Zero Product of the Array Elements](https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements/) - Medium
+- [2094. Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers/) - Easy
+- [2487. Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list/) - Medium
+- [2550. Count Collisions of Monkeys on a Polygon](https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/) - Medium
+- [3304. Find the K-th Character in String Game I](https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/) - Easy
+- [3307. Find the K-th Character in String Game II](https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/) - Hard
+- [3483. Unique 3-Digit Even Numbers](https://leetcode.com/problems/unique-3-digit-even-numbers/) - Easy
+- [3565. Sequential Grid Path Cover](https://leetcode.com/problems/sequential-grid-path-cover/) - Medium
+- [3566. Partition Array into Two Equal Product Subsets](https://leetcode.com/problems/partition-array-into-two-equal-product-subsets/) - Medium
+- [3782. Last Remaining Integer After Alternating Deletion Operations](https://leetcode.com/problems/last-remaining-integer-after-alternating-deletion-operations/) - Hard

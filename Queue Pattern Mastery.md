@@ -1,5 +1,7 @@
 # Queue Pattern Mastery
 
+LeetCode problem list: https://leetcode.com/problem-list/queue/
+
 A practical notes document for studying Queue and Deque problems on LeetCode.
 
 > A queue is the right abstraction when items must be processed in arrival order. A deque extends that idea by allowing efficient operations at both ends, which makes it useful for sliding windows, breadth-first search, monotonic optimization, and simulations.
@@ -1034,4 +1036,63 @@ Current mapped inventory:
 - 23 direct solutions
 - 0 unsolved entries in the current file
 
-When a larger Queue problem export is supplied, new problems can be appended as a numbered backlog and solved one by one in the same format.
+The attached Queue export is now represented in the backlog below. Existing solved problems are excluded from that backlog.
+
+---
+
+## 10. Remaining problems from the attached Queue list
+
+These 52 problems were present in the attachment but do not yet have direct solutions above. They are listed here as the next solution backlog. Existing solved problems are intentionally excluded.
+
+- [225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) - Easy
+- [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) - Hard
+- [281. Zigzag Iterator](https://leetcode.com/problems/zigzag-iterator/) - Medium
+- [341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) - Medium
+- [346. Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) - Easy
+- [353. Design Snake Game](https://leetcode.com/problems/design-snake-game/) - Medium
+- [362. Design Hit Counter](https://leetcode.com/problems/design-hit-counter/) - Medium
+- [379. Design Phone Directory](https://leetcode.com/problems/design-phone-directory/) - Medium
+- [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) - Easy
+- [649. Dota2 Senate](https://leetcode.com/problems/dota2-senate/) - Medium
+- [683. K Empty Slots](https://leetcode.com/problems/k-empty-slots/) - Hard
+- [862. Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/) - Hard
+- [918. Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) - Medium
+- [936. Stamping The Sequence](https://leetcode.com/problems/stamping-the-sequence/) - Hard
+- [950. Reveal Cards In Increasing Order](https://leetcode.com/problems/reveal-cards-in-increasing-order/) - Medium
+- [995. Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/) - Hard
+- [1425. Constrained Subsequence Sum](https://leetcode.com/problems/constrained-subsequence-sum/) - Hard
+- [1429. First Unique Number](https://leetcode.com/problems/first-unique-number/) - Medium
+- [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) - Medium
+- [1499. Max Value of Equation](https://leetcode.com/problems/max-value-of-equation/) - Hard
+- [1687. Delivering Boxes from Storage to Ports](https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/) - Hard
+- [1696. Jump Game VI](https://leetcode.com/problems/jump-game-vi/) - Medium
+- [1700. Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/) - Easy
+- [1823. Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game/) - Medium
+- [1825. Finding MK Average](https://leetcode.com/problems/finding-mk-average/) - Hard
+- [2071. Maximum Number of Tasks You Can Assign](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/) - Hard
+- [2073. Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets/) - Easy
+- [2327. Number of People Aware of a Secret](https://leetcode.com/problems/number-of-people-aware-of-a-secret/) - Medium
+- [2398. Maximum Number of Robots Within Budget](https://leetcode.com/problems/maximum-number-of-robots-within-budget/) - Hard
+- [2407. Longest Increasing Subsequence II](https://leetcode.com/problems/longest-increasing-subsequence-ii/) - Hard
+- [2444. Count Subarrays With Fixed Bounds](https://leetcode.com/problems/count-subarrays-with-fixed-bounds/) - Hard
+- [2526. Find Consecutive Integers from a Data Stream](https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream/) - Medium
+- [2528. Maximize the Minimum Powered City](https://leetcode.com/problems/maximize-the-minimum-powered-city/) - Hard
+- [2534. Time Taken to Cross the Door](https://leetcode.com/problems/time-taken-to-cross-the-door/) - Hard
+- [2762. Continuous Subarrays](https://leetcode.com/problems/continuous-subarrays/) - Medium
+- [2944. Minimum Number of Coins for Fruits](https://leetcode.com/problems/minimum-number-of-coins-for-fruits/) - Medium
+- [2945. Find Maximum Non-decreasing Array Length](https://leetcode.com/problems/find-maximum-non-decreasing-array-length/) - Hard
+- [2969. Minimum Number of Coins for Fruits II](https://leetcode.com/problems/minimum-number-of-coins-for-fruits-ii/) - Hard
+- [3117. Minimum Sum of Values by Dividing Array](https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/) - Hard
+- [3191. Minimum Operations to Make Binary Array Elements Equal to One I](https://leetcode.com/problems/minimum-operations-to-make-binary-array-elements-equal-to-one-i/) - Medium
+- [3369. Design an Array Statistics Tracker](https://leetcode.com/problems/design-an-array-statistics-tracker/) - Hard
+- [3420. Count Non-Decreasing Subarrays After K Operations](https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/) - Hard
+- [3508. Implement Router](https://leetcode.com/problems/implement-router/) - Medium
+- [3578. Count Partitions With Max-Min Difference at Most K](https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/) - Medium
+- [3589. Count Prime-Gap Balanced Subarrays](https://leetcode.com/problems/count-prime-gap-balanced-subarrays/) - Medium
+- [3826. Minimum Partition Score](https://leetcode.com/problems/minimum-partition-score/) - Hard
+- [3829. Design Ride Sharing System](https://leetcode.com/problems/design-ride-sharing-system/) - Medium
+- [3835. Count Subarrays With Cost Less Than or Equal to K](https://leetcode.com/problems/count-subarrays-with-cost-less-than-or-equal-to-k/) - Medium
+- [3845. Maximum Subarray XOR with Bounded Range](https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/) - Hard
+- [3948. Lexicographically Maximum MEX Array](https://leetcode.com/problems/lexicographically-maximum-mex-array/) - Hard
+- [3956. Maximum Sum of M Non-Overlapping Subarrays I](https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-i/) - Hard
+- [3957. Maximum Sum of M Non-Overlapping Subarrays II](https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-ii/) - Hard

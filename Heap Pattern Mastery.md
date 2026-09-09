@@ -1,5 +1,7 @@
 # Heap (Priority Queue) Pattern Mastery
 
+LeetCode problem list: https://leetcode.com/problem-list/heap/
+
 A practical notes document for studying Heap and Priority Queue problems on LeetCode.
 
 > A heap is useful when the next decision must always use the smallest or largest currently available item. The pattern appears in top-k selection, streaming medians, scheduling, greedy resource allocation, graph exploration, and merging sorted sources.

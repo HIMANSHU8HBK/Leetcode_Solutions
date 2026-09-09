@@ -1,5 +1,7 @@
 # Prefix Sum Pattern Mastery
 
+LeetCode problem list: https://leetcode.com/problem-list/prefix-sum/
+
 A practical notes document for studying Prefix Sum and its related sub-patterns on LeetCode.
 
 > Prefix Sum converts repeated range accumulation into constant-time subtraction. The pattern becomes especially powerful when combined with hash maps, parity or balance transformations, two dimensions, difference arrays, and monotonic deques.
