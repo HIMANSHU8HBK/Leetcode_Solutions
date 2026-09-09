@@ -1,5 +1,7 @@
 # Two Pointers Pattern Mastery
 
+LeetCode problem list: https://leetcode.com/problem-list/two-pointers/
+
 A practical notes document for studying the Two Pointers pattern on LeetCode.
 
 > This is a curated master map of core two-pointer problems and sub-patterns. Many LeetCode problems overlap with arrays, strings, linked lists, or greedy logic, so some questions fit in more than one bucket. The goal is to group them by the primary skill they teach.

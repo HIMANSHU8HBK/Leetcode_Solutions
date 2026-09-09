@@ -1,5 +1,7 @@
 # Stack Pattern Mastery
 
+LeetCode problem list: https://leetcode.com/problem-list/stack/
+
 A practical notes document for studying Stack problems and their major sub-patterns on LeetCode.
 
 > A stack is the right abstraction when the most recently opened, added, or unresolved item must be handled first. Stack problems often appear as nesting validation, monotonic next-greater queries, expression parsing, greedy deletion, or simulation.
