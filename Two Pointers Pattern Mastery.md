@@ -1395,22 +1395,8 @@ Why it works: we find which suffix is in descending order, swap in the next larg
 ## 3. Quick pattern recognition guide
 
 ### Use two pointers when you see:
-- sorted arrays
-- “find pair / triplet / quadruplet”
-- “remove duplicates”
-- “palindrome”
-- “reverse / partition / reorder in-place”
-- “middle of linked list”
-- “cycle detection”
-- “minimum/maximum subarray with monotonic condition”
-- “merge two sorted sequences”
 
 ### Typical interview questions to ask yourself:
-- Is the data ordered or partially ordered?
-- Can I shrink the search space with a pointer move?
-- Is there an invariant I can maintain while scanning?
-- Does moving one pointer reduce the remaining possibilities?
-- Can I avoid O(n^2) by eliminating one dimension?
 
 ---
 
@@ -1518,10 +1504,6 @@ If the problem is asking for an O(n log n) or O(n) approach and the data is line
 This is the core mental model behind most two-pointer problems: keep a valid state, move only the pointer that can improve the condition, and preserve the invariant until the answer emerges.
 
 ---
-
-## 9. Remaining problems from the attached Two Pointers list
-
-These 165 problems were present in the attachment but do not yet have a direct solution above. They are listed here as the next solution backlog.
 
 #### Solution: [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) - Medium
 
@@ -3179,116 +3161,2990 @@ class Solution:
 
 Why it works: use the smallest available number for an increase and the largest available number for a decrease, leaving the final number forced.
 
-- [948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/) - Medium
-- [962. Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/) - Medium
-- [969. Pancake Sorting](https://leetcode.com/problems/pancake-sorting/) - Medium
-- [1023. Camelcase Matching](https://leetcode.com/problems/camelcase-matching/) - Medium
-- [1048. Longest String Chain](https://leetcode.com/problems/longest-string-chain/) - Medium
-- [1055. Shortest Way to Form String](https://leetcode.com/problems/shortest-way-to-form-string/) - Medium
-- [1089. Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/) - Easy
-- [1099. Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/) - Easy
-- [1147. Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition/) - Hard
-- [1163. Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/) - Hard
-- [1214. Two Sum BSTs](https://leetcode.com/problems/two-sum-bsts/) - Medium
-- [1229. Meeting Scheduler](https://leetcode.com/problems/meeting-scheduler/) - Medium
-- [1237. Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/) - Medium
-- [1265. Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse/) - Medium
-- [1332. Remove Palindromic Subsequences](https://leetcode.com/problems/remove-palindromic-subsequences/) - Easy
-- [1346. Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/) - Easy
-- [1385. Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) - Easy
-- [1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/) - Easy
-- [1471. The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) - Medium
-- [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) - Medium
-- [1508. Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/) - Medium
-- [1537. Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) - Hard
-- [1570. Dot Product of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors/) - Medium
-- [1574. Shortest Subarray to be Removed to Make Array Sorted](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/) - Medium
-- [1577. Number of Ways Where Square of Number Is Equal to Product of Two Numbers](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) - Medium
-- [1616. Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome/) - Medium
-- [1634. Add Two Polynomials Represented as Linked Lists](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/) - Medium
-- [1650. Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/) - Medium
-- [1679. Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) - Medium
-- [1697. Checking Existence of Edge Length Limited Paths](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/) - Hard
-- [1712. Ways to Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) - Medium
-- [1721. Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/) - Medium
-- [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) - Medium
-- [1754. Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/) - Medium
-- [1755. Closest Subsequence Sum](https://leetcode.com/problems/closest-subsequence-sum/) - Hard
-- [1764. Form Array by Concatenating Subarrays of Another Array](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array/) - Medium
-- [1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) - Easy
-- [1782. Count Pairs Of Nodes](https://leetcode.com/problems/count-pairs-of-nodes/) - Hard
-- [1793. Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/) - Hard
-- [1813. Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/) - Medium
-- [1826. Faulty Sensor](https://leetcode.com/problems/faulty-sensor/) - Easy
-- [1842. Next Palindrome Using Same Digits](https://leetcode.com/problems/next-palindrome-using-same-digits/) - Hard
-- [1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/) - Medium
-- [1855. Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) - Medium
-- [1861. Rotating the Box](https://leetcode.com/problems/rotating-the-box/) - Medium
-- [1868. Product of Two Run-Length Encoded Arrays](https://leetcode.com/problems/product-of-two-run-length-encoded-arrays/) - Medium
-- [1877. Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) - Medium
-- [1885. Count Pairs in Two Arrays](https://leetcode.com/problems/count-pairs-in-two-arrays/) - Medium
-- [1898. Maximum Number of Removable Characters](https://leetcode.com/problems/maximum-number-of-removable-characters/) - Medium
-- [1960. Maximum Product of the Length of Two Palindromic Substrings](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/) - Hard
-- [1961. Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/) - Easy
-- [1963. Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) - Medium
-- [1989. Maximum Number of People That Can Be Caught in Tag](https://leetcode.com/problems/maximum-number-of-people-that-can-be-caught-in-tag/) - Medium
-- [2000. Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) - Easy
-- [2014. Longest Subsequence Repeated k Times](https://leetcode.com/problems/longest-subsequence-repeated-k-times/) - Hard
-- [2035. Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) - Hard
-- [2046. Sort Linked List Already Sorted Using Absolute Values](https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/) - Medium
-- [2071. Maximum Number of Tasks You Can Assign](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/) - Hard
-- [2095. Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) - Medium
-- [2105. Watering Plants II](https://leetcode.com/problems/watering-plants-ii/) - Medium
-- [2108. Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) - Easy
-- [2109. Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/) - Medium
-- [2110. Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/) - Medium
-- [2122. Recover the Original Array](https://leetcode.com/problems/recover-the-original-array/) - Hard
-- [2130. Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) - Medium
-- [2149. Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) - Medium
-- [2161. Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) - Medium
-- [2193. Minimum Number of Moves to Make Palindrome](https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/) - Hard
-- [2200. Find All K-Distant Indices in an Array](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/) - Easy
-- [2234. Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) - Hard
-- [2300. Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) - Medium
-- [2330. Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv/) - Medium
-- [2332. The Latest Time to Catch a Bus](https://leetcode.com/problems/the-latest-time-to-catch-a-bus/) - Medium
-- [2337. Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/) - Medium
-- [2367. Number of Arithmetic Triplets](https://leetcode.com/problems/number-of-arithmetic-triplets/) - Easy
-- [2396. Strictly Palindromic Number](https://leetcode.com/problems/strictly-palindromic-number/) - Medium
-- [2406. Divide Intervals Into Minimum Number of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/) - Medium
-- [2410. Maximum Matching of Players With Trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/) - Medium
-- [2422. Merge Operations to Turn Array Into a Palindrome](https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/) - Medium
-- [2441. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) - Easy
-- [2460. Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/) - Easy
-- [2462. Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/) - Medium
-- [2465. Number of Distinct Averages](https://leetcode.com/problems/number-of-distinct-averages/) - Easy
-- [2472. Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/) - Hard
-- [2486. Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/) - Medium
-- [2491. Divide Players Into Teams of Equal Skill](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/) - Medium
-- [2503. Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/) - Hard
-- [2511. Maximum Enemy Forts That Can Be Captured](https://leetcode.com/problems/maximum-enemy-forts-that-can-be-captured/) - Easy
-- [2540. Minimum Common Value](https://leetcode.com/problems/minimum-common-value/) - Easy
-- [2562. Find the Array Concatenation Value](https://leetcode.com/problems/find-the-array-concatenation-value/) - Easy
-- [2563. Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) - Medium
-- [2565. Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/) - Hard
-- [2570. Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) - Easy
-- [2576. Find the Maximum Number of Marked Indices](https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/) - Medium
-- [2592. Maximize Greatness of an Array](https://leetcode.com/problems/maximize-greatness-of-an-array/) - Medium
-- [2604. Minimum Time to Eat All Grains](https://leetcode.com/problems/minimum-time-to-eat-all-grains/) - Hard
-- [2674. Split a Circular Linked List](https://leetcode.com/problems/split-a-circular-linked-list/) - Medium
-- [2697. Lexicographically Smallest Palindrome](https://leetcode.com/problems/lexicographically-smallest-palindrome/) - Easy
-- [2824. Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) - Easy
-- [2825. Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/) - Medium
-- [2838. Maximum Coins Heroes Can Collect](https://leetcode.com/problems/maximum-coins-heroes-can-collect/) - Medium
-- [2856. Minimum Array Length After Pair Removals](https://leetcode.com/problems/minimum-array-length-after-pair-removals/) - Medium
+#### Solution: [948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/) - Medium
+
+```python
+class Solution:
+    def bagOfTokensScore(self, tokens, power):
+        tokens.sort()
+        left, right = 0, len(tokens) - 1
+        score = 0
+        best = 0
+
+        while left <= right:
+            if power >= tokens[left]:
+                power -= tokens[left]
+                left += 1
+                score += 1
+                best = max(best, score)
+            elif score > 0:
+                power += tokens[right]
+                right -= 1
+                score -= 1
+            else:
+                break
+
+        return best
+```
+
+Why it works: play the cheapest available token face up to gain score, and when power is insufficient, trade the most expensive remaining token face down to regain as much power as possible.
+
+Time complexity is O(n log n), and the extra space is O(1) aside from the sorting implementation.
+
+#### Solution: [962. Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/) - Medium
+
+```python
+class Solution:
+    def maxWidthRamp(self, nums):
+        decreasing = []
+
+        for index, value in enumerate(nums):
+            if not decreasing or value < nums[decreasing[-1]]:
+                decreasing.append(index)
+
+        best = 0
+        for right in range(len(nums) - 1, -1, -1):
+            while decreasing and nums[decreasing[-1]] <= nums[right]:
+                best = max(best, right - decreasing.pop())
+
+        return best
+```
+
+Why it works: the stack stores only indices that introduce a new smaller prefix value. Scanning from the right lets each valid left endpoint pair with its farthest possible right endpoint before it is removed.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [969. Pancake Sorting](https://leetcode.com/problems/pancake-sorting/) - Medium
+
+```python
+class Solution:
+    def pancakeSort(self, arr):
+        flips = []
+
+        for size in range(len(arr), 1, -1):
+            largest_index = arr.index(size)
+            if largest_index == size - 1:
+                continue
+
+            if largest_index != 0:
+                flips.append(largest_index + 1)
+                arr[:largest_index + 1] = reversed(arr[:largest_index + 1])
+
+            flips.append(size)
+            arr[:size] = reversed(arr[:size])
+
+        return flips
+```
+
+Why it works: place the largest unsorted value at the front with one flip, then flip the whole unsorted prefix to move it into its final position.
+
+Time complexity is O(n^2), and the extra space is O(n) for the returned flips.
+
+#### Solution: [1023. Camelcase Matching](https://leetcode.com/problems/camelcase-matching/) - Medium
+
+```python
+class Solution:
+    def camelMatch(self, queries, pattern):
+        def matches(query):
+            pattern_index = 0
+
+            for character in query:
+                if pattern_index < len(pattern) and character == pattern[pattern_index]:
+                    pattern_index += 1
+                elif character.isupper():
+                    return False
+
+            return pattern_index == len(pattern)
+
+        return [matches(query) for query in queries]
+```
+
+Why it works: pattern characters must appear in order, while unmatched lowercase query characters are allowed and unmatched uppercase characters make the query invalid.
+
+Time complexity is O(total query length), and the extra space is O(1) excluding the result.
+
+#### Solution: [1048. Longest String Chain](https://leetcode.com/problems/longest-string-chain/) - Medium
+
+```python
+class Solution:
+    def longestStrChain(self, words):
+        words.sort(key=len)
+        best_chain = {}
+        answer = 0
+
+        for word in words:
+            best_chain[word] = 1
+            for index in range(len(word)):
+                predecessor = word[:index] + word[index + 1:]
+                best_chain[word] = max(best_chain[word], best_chain.get(predecessor, 0) + 1)
+            answer = max(answer, best_chain[word])
+
+        return answer
+```
+
+Why it works: after sorting by length, every valid predecessor has already been processed. Removing one character from the current word enumerates all possible predecessors.
+
+Time complexity is O(nL^2), and the extra space is O(nL), where L is the maximum word length.
+
+#### Solution: [1055. Shortest Way to Form String](https://leetcode.com/problems/shortest-way-to-form-string/) - Medium
+
+```python
+class Solution:
+    def shortestWay(self, source, target):
+        if any(character not in source for character in target):
+            return -1
+
+        subsequences = 0
+        target_index = 0
+
+        while target_index < len(target):
+            source_index = 0
+            start = target_index
+
+            while source_index < len(source) and target_index < len(target):
+                if source[source_index] == target[target_index]:
+                    target_index += 1
+                source_index += 1
+
+            if target_index == start:
+                return -1
+            subsequences += 1
+
+        return subsequences
+```
+
+Why it works: each pass greedily consumes the longest possible subsequence of target from source, so no shorter collection of source passes can cover the same target prefix.
+
+Time complexity is O(len(source) * len(target)) in the worst case, and the extra space is O(1).
+
+#### Solution: [1089. Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/) - Easy
+
+```python
+class Solution:
+    def duplicateZeros(self, arr):
+        zeroes = arr.count(0)
+        read = len(arr) - 1
+        write = len(arr) + zeroes - 1
+
+        while read >= 0:
+            if write < len(arr):
+                arr[write] = arr[read]
+            write -= 1
+
+            if arr[read] == 0:
+                if write < len(arr):
+                    arr[write] = 0
+                write -= 1
+            read -= 1
+```
+
+Why it works: count the zeros that will be duplicated, then write backward from the virtual expanded array so every original value is copied into its final position without overwriting unread values.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [1099. Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/) - Easy
+
+```python
+class Solution:
+    def twoSumLessThanK(self, nums, k):
+        nums.sort()
+        left, right = 0, len(nums) - 1
+        best = -1
+
+        while left < right:
+            total = nums[left] + nums[right]
+            if total < k:
+                best = max(best, total)
+                left += 1
+            else:
+                right -= 1
+
+        return best
+```
+
+Why it works: when a pair is below k, increasing the left value is the only move that can improve its sum; otherwise, the right value is too large and must move left.
+
+Time complexity is O(n log n), and the extra space is O(1) aside from the sorting implementation.
+
+#### Solution: [1147. Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition/) - Hard
+
+```python
+class Solution:
+    def longestDecomposition(self, text):
+        left_chunk = ''
+        right_chunk = ''
+        answer = 0
+
+        for left, right in zip(text, reversed(text)):
+            left_chunk += left
+            right_chunk = right + right_chunk
+            if left_chunk == right_chunk:
+                answer += 2
+                left_chunk = ''
+                right_chunk = ''
+
+        if left_chunk:
+            answer += 1
+
+        return answer
+```
+
+Why it works: greedily commit the smallest matching chunks from both ends. Matching earlier cannot reduce the best possible number of chunks because every decomposition must begin with a matching pair or a single middle chunk.
+
+Time complexity is O(n^2) with immutable string concatenation, and the extra space is O(n).
+
+#### Solution: [1163. Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/) - Hard
+
+```python
+class Solution:
+    def lastSubstring(self, s):
+        first, candidate = 0, 1
+        offset = 0
+
+        while candidate + offset < len(s):
+            if s[first + offset] == s[candidate + offset]:
+                offset += 1
+                continue
+
+            if s[first + offset] < s[candidate + offset]:
+                first += offset + 1
+                if first >= candidate:
+                    candidate = first + 1
+            else:
+                candidate += offset + 1
+            offset = 0
+
+        return s[first:]
+```
+
+Why it works: compare two candidate suffixes until they differ; the suffix with the larger character survives, and the skipped candidates cannot be lexicographically maximal after that comparison.
+
+Time complexity is O(n), and the extra space is O(1) excluding the returned substring.
+
+---
+
+#### Solution: [1214. Two Sum BSTs](https://leetcode.com/problems/two-sum-bsts/) - Medium
+
+```python
+class Solution:
+    def twoSumBSTs(self, root1, root2, target):
+        def inorder(node, values):
+            if not node:
+                return
+            inorder(node.left, values)
+            values.append(node.val)
+            inorder(node.right, values)
+
+        first = []
+        second = []
+        inorder(root1, first)
+        inorder(root2, second)
+
+        left, right = 0, len(second) - 1
+        while left < len(first) and right >= 0:
+            total = first[left] + second[right]
+            if total == target:
+                return True
+            if total < target:
+                left += 1
+            else:
+                right -= 1
+
+        return False
+```
+
+Why it works: inorder traversal produces two sorted value lists, so the pair sum can be searched with one pointer moving upward and the other moving downward.
+
+Time complexity is O(n + m), and the extra space is O(n + m).
+
+#### Solution: [1229. Meeting Scheduler](https://leetcode.com/problems/meeting-scheduler/) - Medium
+
+```python
+class Solution:
+    def minAvailableDuration(self, slots1, slots2, duration):
+        slots1.sort()
+        slots2.sort()
+        first = second = 0
+
+        while first < len(slots1) and second < len(slots2):
+            start = max(slots1[first][0], slots2[second][0])
+            end = min(slots1[first][1], slots2[second][1])
+            if end - start >= duration:
+                return [start, start + duration]
+
+            if slots1[first][1] < slots2[second][1]:
+                first += 1
+            else:
+                second += 1
+
+        return []
+```
+
+Why it works: compare the current intervals, use their overlap when it is long enough, and advance the interval that ends first because it cannot create a later overlap.
+
+Time complexity is O(n log n + m log m), and the extra space is O(1) aside from sorting.
+
+#### Solution: [1237. Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/) - Medium
+
+```python
+class Solution:
+    def findSolution(self, customfunction, z):
+        result = []
+        x, y = 1, 1000
+
+        while x <= 1000 and y >= 1:
+            value = customfunction.f(x, y)
+            if value == z:
+                result.append([x, y])
+                x += 1
+                y -= 1
+            elif value < z:
+                x += 1
+            else:
+                y -= 1
+
+        return result
+```
+
+Why it works: the function increases with x and decreases with y, so a value that is too small requires a larger x, while a value that is too large requires a smaller y.
+
+Time complexity is O(1000), and the extra space is O(1) excluding the result.
+
+#### Solution: [1265. Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse/) - Medium
+
+```python
+class Solution:
+    def printLinkedListInReverse(self, head):
+        nodes = []
+        node = head
+
+        while node:
+            nodes.append(node)
+            node = node.getNext()
+
+        for node in reversed(nodes):
+            node.printValue()
+```
+
+Why it works: the immutable nodes cannot be rewired, so store their references during a forward traversal and call printValue in reverse order afterward.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [1332. Remove Palindromic Subsequences](https://leetcode.com/problems/remove-palindromic-subsequences/) - Easy
+
+```python
+class Solution:
+    def removePalindromeSub(self, s):
+        left, right = 0, len(s) - 1
+        while left < right:
+            if s[left] != s[right]:
+                return 2
+            left += 1
+            right -= 1
+
+        return 1 if s else 0
+```
+
+Why it works: if the string is already a palindrome, remove it in one subsequence. Otherwise, remove all a characters and then all b characters in two subsequences.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [1346. Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/) - Easy
+
+```python
+class Solution:
+    def checkIfExist(self, arr):
+        seen = set()
+
+        for value in arr:
+            if value * 2 in seen or value % 2 == 0 and value // 2 in seen:
+                return True
+            seen.add(value)
+
+        return False
+```
+
+Why it works: for each value, check whether its double or its half has already appeared. The set also handles zero correctly because a second zero is a valid match.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [1385. Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) - Easy
+
+```python
+class Solution:
+    def findTheDistanceValue(self, arr1, arr2, d):
+        arr1.sort()
+        arr2.sort()
+        pointer = 0
+        answer = 0
+
+        for value in arr1:
+            while pointer < len(arr2) and arr2[pointer] < value - d:
+                pointer += 1
+            if pointer == len(arr2) or arr2[pointer] > value + d:
+                answer += 1
+
+        return answer
+```
+
+Why it works: after sorting both arrays, the pointer skips values that are too small. If the first remaining value is also above the allowed range, every value in arr2 is farther than d from the current value.
+
+Time complexity is O(n log n + m log m), and the extra space is O(1) aside from sorting.
+
+#### Solution: [1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/) - Easy
+
+```python
+class Solution:
+    def isPrefixOfWord(self, sentence, searchWord):
+        for index, word in enumerate(sentence.split(), start=1):
+            if word.startswith(searchWord):
+                return index
+
+        return -1
+```
+
+Why it works: scan the words from left to right and return the first position whose beginning matches searchWord.
+
+Time complexity is O(n), and the extra space is O(n) for the split words.
+
+#### Solution: [1471. The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) - Medium
+
+```python
+class Solution:
+    def getStrongest(self, arr, k):
+        arr.sort()
+        median = arr[(len(arr) - 1) // 2]
+        left, right = 0, len(arr) - 1
+        result = []
+
+        while len(result) < k:
+            left_strength = abs(arr[left] - median)
+            right_strength = abs(arr[right] - median)
+            if right_strength >= left_strength:
+                result.append(arr[right])
+                right -= 1
+            else:
+                result.append(arr[left])
+                left += 1
+
+        return result
+```
+
+Why it works: after sorting, the strongest remaining value must be at one of the ends. Compare the two endpoint strengths and choose the right endpoint on ties because it has the larger value.
+
+Time complexity is O(n log n), and the extra space is O(k) for the result.
+
+#### Solution: [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) - Medium
+
+```python
+class Solution:
+    def numSubseq(self, nums, target):
+        modulo = 10**9 + 7
+        nums.sort()
+        powers = [1] * len(nums)
+
+        for index in range(1, len(nums)):
+            powers[index] = powers[index - 1] * 2 % modulo
+
+        left, right = 0, len(nums) - 1
+        answer = 0
+
+        while left <= right:
+            if nums[left] + nums[right] <= target:
+                answer = (answer + powers[right - left]) % modulo
+                left += 1
+            else:
+                right -= 1
+
+        return answer
+```
+
+Why it works: when the smallest and largest selected values fit the target, every subset of the values between them can be chosen, giving 2^(right - left) valid subsequences.
+
+Time complexity is O(n log n), and the extra space is O(n).
+
+---
+
+#### Solution: [1508. Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/) - Medium
+
+```python
+class Solution:
+    def rangeSum(self, nums, n, left, right):
+        modulo = 10**9 + 7
+        sums = []
+
+        for start in range(n):
+            current = 0
+            for end in range(start, n):
+                current += nums[end]
+                sums.append(current)
+
+        sums.sort()
+        return sum(sums[left - 1:right]) % modulo
+```
+
+Why it works: generate every contiguous subarray sum, sort those sums, and add the requested rank range.
+
+Time complexity is O(n^2 log n), and the extra space is O(n^2).
+
+#### Solution: [1537. Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) - Hard
+
+```python
+class Solution:
+    def maxSum(self, nums1, nums2):
+        first = second = 0
+        i = j = 0
+        modulo = 10**9 + 7
+
+        while i < len(nums1) or j < len(nums2):
+            if j == len(nums2) or (i < len(nums1) and nums1[i] < nums2[j]):
+                first += nums1[i]
+                i += 1
+            elif i == len(nums1) or nums2[j] < nums1[i]:
+                second += nums2[j]
+                j += 1
+            else:
+                best = max(first, second) + nums1[i]
+                first = best
+                second = best
+                i += 1
+                j += 1
+
+        return max(first, second) % modulo
+```
+
+Why it works: accumulate the score along both paths, and at every common value choose the larger accumulated score before continuing from the shared point.
+
+Time complexity is O(n + m), and the extra space is O(1).
+
+#### Solution: [1570. Dot Product of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors/) - Medium
+
+```python
+class SparseVector:
+    def __init__(self, nums):
+        self.values = [(index, value) for index, value in enumerate(nums) if value]
+
+    def dotProduct(self, vec):
+        first = second = 0
+        result = 0
+
+        while first < len(self.values) and second < len(vec.values):
+            first_index, first_value = self.values[first]
+            second_index, second_value = vec.values[second]
+            if first_index == second_index:
+                result += first_value * second_value
+                first += 1
+                second += 1
+            elif first_index < second_index:
+                first += 1
+            else:
+                second += 1
+
+        return result
+```
+
+Why it works: store only non-zero entries, then advance the pointer with the smaller index until matching indices can be multiplied.
+
+Building a vector takes O(n) time and O(k) space, where k is the number of non-zero values. A dot product takes O(k1 + k2) time.
+
+#### Solution: [1574. Shortest Subarray to be Removed to Make Array Sorted](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/) - Medium
+
+```python
+class Solution:
+    def findLengthOfShortestSubarray(self, arr):
+        n = len(arr)
+        left = 0
+        while left + 1 < n and arr[left] <= arr[left + 1]:
+            left += 1
+
+        if left == n - 1:
+            return 0
+
+        right = n - 1
+        while right > 0 and arr[right - 1] <= arr[right]:
+            right -= 1
+
+        answer = min(n - left - 1, right)
+        first, second = 0, right
+
+        while first <= left and second < n:
+            if arr[first] <= arr[second]:
+                answer = min(answer, second - first - 1)
+                first += 1
+            else:
+                second += 1
+
+        return answer
+```
+
+Why it works: keep the longest sorted prefix and suffix, then use two pointers to find the smallest gap that connects a prefix value to a suffix value without breaking order.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [1577. Number of Ways Where Square of Number Is Equal to Product of Two Numbers](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) - Medium
+
+```python
+class Solution:
+    def numTriplets(self, nums1, nums2):
+        def count(first, second):
+            second.sort()
+            answer = 0
+
+            for value in first:
+                target = value * value
+                left, right = 0, len(second) - 1
+
+                while left < right:
+                    product = second[left] * second[right]
+                    if product < target:
+                        left += 1
+                    elif product > target:
+                        right -= 1
+                    elif second[left] != second[right]:
+                        left_count = 1
+                        right_count = 1
+                        while left + 1 < right and second[left] == second[left + 1]:
+                            left += 1
+                            left_count += 1
+                        while right - 1 > left and second[right] == second[right - 1]:
+                            right -= 1
+                            right_count += 1
+                        answer += left_count * right_count
+                        left += 1
+                        right -= 1
+                    else:
+                        count = right - left + 1
+                        answer += count * (count - 1) // 2
+                        break
+
+            return answer
+
+        return count(nums1, nums2) + count(nums2, nums1)
+```
+
+Why it works: for each possible squared value, sort the other array and use two pointers to count pairs whose product matches it, including duplicate multiplicities.
+
+Time complexity is O(n^2 log n + m^2 log m), and the extra space is O(1) aside from sorting.
+
+#### Solution: [1616. Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome/) - Medium
+
+```python
+class Solution:
+    def checkPalindromeFormation(self, a, b):
+        def is_palindrome(text, left, right):
+            while left < right:
+                if text[left] != text[right]:
+                    return False
+                left += 1
+                right -= 1
+            return True
+
+        def can_form(first, second):
+            left, right = 0, len(first) - 1
+            while left < right and first[left] == second[right]:
+                left += 1
+                right -= 1
+            return is_palindrome(first, left, right) or is_palindrome(second, left, right)
+
+        return can_form(a, b) or can_form(b, a)
+```
+
+Why it works: compare the outer characters contributed by the two strings until the first mismatch, then the remaining unmatched section must be a palindrome in either source string.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [1634. Add Two Polynomials Represented as Linked Lists](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/) - Medium
+
+```python
+class Solution:
+    def addPoly(self, poly1, poly2):
+        dummy = PolyNode(0, 0)
+        tail = dummy
+
+        while poly1 or poly2:
+            if not poly2 or (poly1 and poly1.power > poly2.power):
+                coefficient = poly1.coefficient
+                power = poly1.power
+                poly1 = poly1.next
+            elif not poly1 or poly2.power > poly1.power:
+                coefficient = poly2.coefficient
+                power = poly2.power
+                poly2 = poly2.next
+            else:
+                coefficient = poly1.coefficient + poly2.coefficient
+                power = poly1.power
+                poly1 = poly1.next
+                poly2 = poly2.next
+
+            if coefficient:
+                tail.next = PolyNode(coefficient, power)
+                tail = tail.next
+
+        return dummy.next
+```
+
+Why it works: the polynomial lists are sorted by descending power, so merge them like sorted lists and combine nodes with equal powers.
+
+Time complexity is O(n + m), and the extra space is O(1) excluding the output list.
+
+#### Solution: [1650. Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/) - Medium
+
+```python
+class Solution:
+    def lowestCommonAncestor(self, p, q):
+        first, second = p, q
+
+        while first != second:
+            first = first.parent if first else q
+            second = second.parent if second else p
+
+        return first
+```
+
+Why it works: each pointer traverses one path and then the other path, so both cover the same total distance and meet at the first shared ancestor.
+
+Time complexity is O(h), and the extra space is O(1).
+
+#### Solution: [1679. Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) - Medium
+
+#### Solution: [2149. Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) - Medium
+
+```python
+class Solution:
+    def rearrangeArray(self, nums):
+        result = [0] * len(nums)
+        positive = 0
+        negative = 1
+
+        for value in nums:
+            if value > 0:
+                result[positive] = value
+                positive += 2
+            else:
+                result[negative] = value
+                negative += 2
+
+        return result
+```
+
+Why it works: place positive values at even indices and negative values at odd indices, advancing each write pointer by two.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [2161. Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) - Medium
+
+```python
+class Solution:
+    def pivotArray(self, nums, pivot):
+        result = []
+        for value in nums:
+            if value < pivot:
+                result.append(value)
+        for value in nums:
+            if value == pivot:
+                result.append(value)
+        for value in nums:
+            if value > pivot:
+                result.append(value)
+        return result
+```
+
+Why it works: three stable passes preserve the original order within the less-than, equal-to, and greater-than partitions.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [2193. Minimum Number of Moves to Make Palindrome](https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/) - Hard
+
+```python
+class Solution:
+    def minMovesToMakePalindrome(self, s):
+        characters = list(s)
+        left, right = 0, len(characters) - 1
+        moves = 0
+
+        while left < right:
+            if characters[left] == characters[right]:
+                left += 1
+                right -= 1
+                continue
+
+            match = right
+            while match > left and characters[match] != characters[left]:
+                match -= 1
+
+            if match == left:
+                characters[left], characters[left + 1] = characters[left + 1], characters[left]
+                moves += 1
+            else:
+                while match < right:
+                    characters[match], characters[match + 1] = characters[match + 1], characters[match]
+                    match += 1
+                    moves += 1
+                left += 1
+                right -= 1
+
+        return moves
+```
+
+Why it works: match the left character with the nearest equal character on the right and bubble it into place. If it has no partner, it is the middle character and moves one step toward the center.
+
+Time complexity is O(n^2), and the extra space is O(n).
+
+#### Solution: [2200. Find All K-Distant Indices in an Array](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/) - Easy
+
+```python
+class Solution:
+    def findKDistantIndices(self, nums, key, k):
+        key_indices = [index for index, value in enumerate(nums) if value == key]
+        result = []
+        pointer = 0
+
+        for index in range(len(nums)):
+            while pointer < len(key_indices) and key_indices[pointer] < index - k:
+                pointer += 1
+            if pointer < len(key_indices) and key_indices[pointer] <= index + k:
+                result.append(index)
+
+        return result
+```
+
+Why it works: the key indices are sorted, so discard keys too far left and check whether the next key is within k of the current index.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [2234. Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) - Hard
+
+```python
+from bisect import bisect_left
+
+class Solution:
+    def maximumBeauty(self, flowers, newFlowers, target, full, partial):
+        flowers.sort()
+        flowers = [min(value, target) for value in flowers]
+        prefix = [0]
+        for value in flowers:
+            prefix.append(prefix[-1] + value)
+
+        answer = 0
+        n = len(flowers)
+        remaining_flowers = newFlowers
+
+        for complete in range(n + 1):
+            if complete:
+                index = n - complete
+                remaining_flowers -= target - flowers[index]
+                if remaining_flowers < 0:
+                    break
+
+            remaining = n - complete
+            if remaining == 0:
+                answer = max(answer, complete * full)
+                continue
+
+            low, high = 0, target - 1
+            while low < high:
+                middle = (low + high + 1) // 2
+                count = bisect_left(flowers, middle, 0, remaining)
+                cost = middle * count - prefix[count]
+                if cost <= remaining_flowers:
+                    low = middle
+                else:
+                    high = middle - 1
+
+            answer = max(answer, complete * full + low * partial)
+
+        return answer
+```
+
+Why it works: choose how many gardens to complete from the largest upward, then binary search the highest possible minimum for the remaining gardens using prefix sums.
+
+Time complexity is O(n log n + n log target log n), and the extra space is O(n).
+
+---
+
+```python
+class Solution:
+These 95 problems were present in the attachment but do not yet have a direct solution above. They are listed here as the next solution backlog.
+        nums.sort()
+        left, right = 0, len(nums) - 1
+        operations = 0
+
+        while left < right:
+            total = nums[left] + nums[right]
+            if total == k:
+                operations += 1
+                left += 1
+                right -= 1
+            elif total < k:
+                left += 1
+            else:
+                right -= 1
+
+        return operations
+```
+
+Why it works: after sorting, a sum that is too small requires a larger left value, while a sum that is too large requires a smaller right value. Equal sums consume both values as one operation.
+
+Time complexity is O(n log n), and the extra space is O(1) aside from sorting.
+
+#### Solution: [1697. Checking Existence of Edge Length Limited Paths](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/) - Hard
+
+```python
+class Solution:
+    def distanceLimitedPathsExist(self, n, edgeList, queries):
+        parent = list(range(n))
+        rank = [0] * n
+
+        def find(node):
+            while parent[node] != node:
+                parent[node] = parent[parent[node]]
+                node = parent[node]
+            return node
+
+        def union(first, second):
+            first = find(first)
+            second = find(second)
+            if first == second:
+                return
+            if rank[first] < rank[second]:
+                first, second = second, first
+            parent[second] = first
+            if rank[first] == rank[second]:
+                rank[first] += 1
+
+        edgeList.sort(key=lambda edge: edge[2])
+        ordered_queries = sorted(enumerate(queries), key=lambda item: item[1][2])
+        answer = [False] * len(queries)
+        edge_index = 0
+
+        for query_index, (start, end, limit) in ordered_queries:
+            while edge_index < len(edgeList) and edgeList[edge_index][2] < limit:
+                union(edgeList[edge_index][0], edgeList[edge_index][1])
+                edge_index += 1
+            answer[query_index] = find(start) == find(end)
+
+        return answer
+```
+
+Why it works: process edges and queries in increasing weight order. Before answering a query, union every edge whose weight is below its limit; connectivity in the resulting DSU is exactly the required path condition.
+
+Time complexity is O((E + Q) log(E + Q)), and the extra space is O(n + Q).
+
+
+#### Solution: [1712. Ways to Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) - Medium
+
+```python
+class Solution:
+    def waysToSplit(self, nums):
+        modulo = 10**9 + 7
+        prefix = [0]
+        for value in nums:
+            prefix.append(prefix[-1] + value)
+
+        total = prefix[-1]
+        first = second = 1
+        answer = 0
+
+        for left_end in range(len(nums) - 2):
+            left_sum = prefix[left_end + 1]
+            first = max(first, left_end + 1)
+            while first < len(nums) - 1 and prefix[first + 1] - left_sum < left_sum:
+                first += 1
+
+            second = max(second, first)
+            while second < len(nums) - 1 and prefix[second + 1] - left_sum <= total - prefix[second + 1]:
+                second += 1
+
+            answer += second - first
+
+        return answer % modulo
+```
+
+Why it works: prefix sums make each partition sum available in O(1), while two monotonic pointers track the first and last valid end of the middle subarray for each left split.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [1721. Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/) - Medium
+
+```python
+class Solution:
+    def swapNodes(self, head, k):
+        first = head
+        for _ in range(k - 1):
+            first = first.next
+
+        fast = first
+        second = head
+        while fast.next:
+            fast = fast.next
+            second = second.next
+
+        first.val, second.val = second.val, first.val
+        return head
+```
+
+Why it works: place one pointer on the kth node from the start, then move a second pointer as the first pointer reaches the end so it lands on the kth node from the end.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) - Medium
+
+```python
+class Solution:
+    def minimumLength(self, s):
+        left, right = 0, len(s) - 1
+
+        while left < right and s[left] == s[right]:
+            character = s[left]
+            while left <= right and s[left] == character:
+                left += 1
+            while left <= right and s[right] == character:
+                right -= 1
+
+        return right - left + 1
+```
+
+Why it works: when both ends match, every consecutive copy of that character can be removed from both sides. Stop at the first unmatched pair or when the pointers cross.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [1754. Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/) - Medium
+
+```python
+class Solution:
+    def largestMerge(self, word1, word2):
+        first = second = 0
+        result = []
+
+        while first < len(word1) or second < len(word2):
+            if word1[first:] >= word2[second:]:
+                result.append(word1[first])
+                first += 1
+            else:
+                result.append(word2[second])
+                second += 1
+
+        return ''.join(result)
+```
+
+Why it works: choose the first character from the lexicographically larger remaining suffix. That choice leaves the largest possible merge prefix at every step.
+
+Time complexity is O((n + m)^2) with suffix comparisons, and the extra space is O(n + m).
+
+#### Solution: [1755. Closest Subsequence Sum](https://leetcode.com/problems/closest-subsequence-sum/) - Hard
+
+```python
+from bisect import bisect_left
+
+class Solution:
+    def minAbsDifference(self, nums, goal):
+        def subset_sums(values):
+            sums = [0]
+            for value in values:
+                sums += [current + value for current in sums]
+            return sums
+
+        middle = len(nums) // 2
+        first = subset_sums(nums[:middle])
+        second = sorted(subset_sums(nums[middle:]))
+        answer = abs(goal)
+
+        for value in first:
+            target = goal - value
+            index = bisect_left(second, target)
+            if index < len(second):
+                answer = min(answer, abs(value + second[index] - goal))
+            if index > 0:
+                answer = min(answer, abs(value + second[index - 1] - goal))
+
+        return answer
+```
+
+Why it works: divide the array into two halves, enumerate each half's subset sums, and use binary search to find the closest complementary sum.
+
+Time complexity is O(2^(n/2) log 2^(n/2)), and the extra space is O(2^(n/2)).
+
+#### Solution: [1764. Form Array by Concatenating Subarrays of Another Array](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array/) - Medium
+
+```python
+class Solution:
+    def canChoose(self, groups, nums):
+        start = 0
+
+        for group in groups:
+            found = False
+            while start + len(group) <= len(nums):
+                if nums[start:start + len(group)] == group:
+                    start += len(group)
+                    found = True
+                    break
+                start += 1
+
+            if not found:
+                return False
+
+        return True
+```
+
+Why it works: search for each group only after the previous group, and advance past the first matching occurrence so groups cannot overlap.
+
+Time complexity is O(nm) in the worst case, and the extra space is O(1) excluding slices.
+
+#### Solution: [1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) - Easy
+
+```python
+class Solution:
+    def mergeAlternately(self, word1, word2):
+        result = []
+        left = right = 0
+
+        while left < len(word1) or right < len(word2):
+            if left < len(word1):
+                result.append(word1[left])
+                left += 1
+            if right < len(word2):
+                result.append(word2[right])
+                right += 1
+
+        return ''.join(result)
+```
+
+Why it works: two pointers consume one character from each string whenever available, naturally appending any leftover suffix.
+
+Time complexity is O(n + m), and the extra space is O(n + m).
+
+#### Solution: [1782. Count Pairs Of Nodes](https://leetcode.com/problems/count-pairs-of-nodes/) - Hard
+
+```python
+class Solution:
+    def countPairs(self, n, edges, queries):
+        degree = [0] * (n + 1)
+        shared = {}
+
+        for first, second in edges:
+            degree[first] += 1
+            degree[second] += 1
+            if first > second:
+                first, second = second, first
+            shared[(first, second)] = shared.get((first, second), 0) + 1
+
+        sorted_degrees = sorted(degree[1:])
+        answer = []
+
+        for query in queries:
+            left, right = 0, n - 1
+            count = 0
+            while left < right:
+                if sorted_degrees[left] + sorted_degrees[right] > query:
+                    count += right - left
+                    right -= 1
+                else:
+                    left += 1
+
+            for (first, second), edge_count in shared.items():
+                if degree[first] + degree[second] > query and degree[first] + degree[second] - edge_count <= query:
+                    count -= 1
+
+            answer.append(count)
+
+        return answer
+```
+
+Why it works: sorted degrees count candidate pairs by degree sum, then duplicate edges are subtracted when their shared-edge count lowers the true pair count below the query threshold.
+
+Time complexity is O((E + n) log n + QE), and the extra space is O(n + E).
+
+#### Solution: [1793. Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/) - Hard
+
+```python
+class Solution:
+    def maximumScore(self, nums, k):
+        left = right = k
+        minimum = nums[k]
+        answer = minimum
+
+        while left > 0 or right < len(nums) - 1:
+            if left == 0:
+                right += 1
+            elif right == len(nums) - 1:
+                left -= 1
+            elif nums[left - 1] >= nums[right + 1]:
+                left -= 1
+            else:
+                right += 1
+
+            minimum = min(minimum, nums[left], nums[right])
+            answer = max(answer, minimum * (right - left + 1))
+
+        return answer
+```
+
+Why it works: expand the window containing k toward the larger neighboring value, preserving the best possible minimum for each width and updating the score after every expansion.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [1813. Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/) - Medium
+
+```python
+class Solution:
+    def areSentencesSimilar(self, sentence1, sentence2):
+        first = sentence1.split()
+        second = sentence2.split()
+
+        if len(first) > len(second):
+            first, second = second, first
+
+        left = 0
+        while left < len(first) and first[left] == second[left]:
+            left += 1
+
+        right = 0
+        while right < len(first) - left and first[-1 - right] == second[-1 - right]:
+            right += 1
+
+        return left + right == len(first)
+```
+
+Why it works: after aligning the common prefix and suffix, the shorter sentence is similar exactly when those two matching regions cover it completely.
+
+Time complexity is O(n + m), and the extra space is O(n + m) for the split words.
+
+---
+
+#### Solution: [1826. Faulty Sensor](https://leetcode.com/problems/faulty-sensor/) - Easy
+
+```python
+class Solution:
+    def badSensor(self, sensor1, sensor2):
+        mismatch = 0
+        while mismatch < len(sensor1) and sensor1[mismatch] == sensor2[mismatch]:
+            mismatch += 1
+
+        if mismatch == len(sensor1):
+            return -1
+
+        first_is_faulty = sensor1[mismatch + 1:] == sensor2[mismatch:-1]
+        return 1 if first_is_faulty else 2
+```
+
+Why it works: before the first mismatch both sensors agree. The faulty sensor must have one extra reading, so removing the next reading from sensor1 is the only candidate that can restore the remaining alignment.
+
+Time complexity is O(n), and the extra space is O(n) for the slices.
+
+#### Solution: [1842. Next Palindrome Using Same Digits](https://leetcode.com/problems/next-palindrome-using-same-digits/) - Hard
+
+```python
+class Solution:
+    def nextPalindrome(self, num):
+        half = list(num[:(len(num) + 1) // 2])
+        index = len(half) - 2
+
+        while index >= 0 and half[index] >= half[index + 1]:
+            index -= 1
+        if index < 0:
+            return ''
+
+        swap = len(half) - 1
+        while half[swap] <= half[index]:
+            swap -= 1
+        half[index], half[swap] = half[swap], half[index]
+        half[index + 1:] = reversed(half[index + 1:])
+
+        if len(num) % 2:
+            return ''.join(half + half[-2::-1])
+        return ''.join(half + half[::-1])
+```
+
+Why it works: the first half determines the palindrome, so find its next permutation and mirror it. If the half has no next permutation, the requested larger palindrome does not exist.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/) - Medium
+
+```python
+class Solution:
+    def getMinSwaps(self, num, k):
+        target = list(num)
+
+        for _ in range(k):
+            index = len(target) - 2
+            while target[index] >= target[index + 1]:
+                index -= 1
+            swap = len(target) - 1
+            while target[swap] <= target[index]:
+                swap -= 1
+            target[index], target[swap] = target[swap], target[index]
+            target[index + 1:] = reversed(target[index + 1:])
+
+        current = list(num)
+        swaps = 0
+        for index in range(len(current)):
+            if current[index] == target[index]:
+                continue
+            next_index = index + 1
+            while current[next_index] != target[index]:
+                next_index += 1
+            while next_index > index:
+                current[next_index], current[next_index - 1] = current[next_index - 1], current[next_index]
+                next_index -= 1
+                swaps += 1
+
+        return swaps
+```
+
+Why it works: generate the kth lexicographic permutation, then greedily move each required digit left to its target position using the minimum adjacent swaps.
+
+Time complexity is O(kn + n^2), and the extra space is O(n).
+
+#### Solution: [1855. Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) - Medium
+
+```python
+class Solution:
+    def maxDistance(self, nums1, nums2):
+        first = second = 0
+        answer = 0
+
+        while first < len(nums1) and second < len(nums2):
+            if nums1[first] <= nums2[second]:
+                answer = max(answer, second - first)
+                second += 1
+            else:
+                first += 1
+
+        return answer
+```
+
+Why it works: both arrays are non-increasing. When the current pair is valid, moving the second pointer can only increase the distance; when it is invalid, only a smaller nums1 value can help.
+
+Time complexity is O(n + m), and the extra space is O(1).
+
+#### Solution: [1861. Rotating the Box](https://leetcode.com/problems/rotating-the-box/) - Medium
+
+```python
+class Solution:
+    def rotateTheBox(self, box):
+        for row in box:
+            write = len(row) - 1
+            for index in range(len(row) - 1, -1, -1):
+                if row[index] == '*':
+                    write = index - 1
+                elif row[index] == '#':
+                    row[index] = '.'
+                    row[write] = '#'
+                    write -= 1
+
+        return [list(row) for row in zip(*box[::-1])]
+```
+
+Why it works: compact stones toward the right within each obstacle-separated row, then transpose the box after reversing its rows to rotate it clockwise.
+
+Time complexity is O(mn), and the extra space is O(mn) for the rotated result.
+
+---
+
+#### Solution: [1868. Product of Two Run-Length Encoded Arrays](https://leetcode.com/problems/product-of-two-run-length-encoded-arrays/) - Medium
+
+```python
+class Solution:
+    def findRLEArray(self, encoded1, encoded2):
+        first = second = 0
+        result = []
+
+        while first < len(encoded1) and second < len(encoded2):
+            value = encoded1[first][0] * encoded2[second][0]
+            count = min(encoded1[first][1], encoded2[second][1])
+
+            if result and result[-1][0] == value:
+                result[-1][1] += count
+            else:
+                result.append([value, count])
+
+            encoded1[first][1] -= count
+            encoded2[second][1] -= count
+            if encoded1[first][1] == 0:
+                first += 1
+            if encoded2[second][1] == 0:
+                second += 1
+
+        return result
+```
+
+Why it works: the current runs overlap for the smaller remaining count. Consume that overlap, multiply the values, and advance whichever run ends first.
+
+Time complexity is O(n + m), and the extra space is O(n + m) for the result.
+
+#### Solution: [1877. Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) - Medium
+
+```python
+class Solution:
+    def minPairSum(self, nums):
+        nums.sort()
+        left, right = 0, len(nums) - 1
+        answer = 0
+
+        while left < right:
+            answer = max(answer, nums[left] + nums[right])
+            left += 1
+            right -= 1
+
+        return answer
+```
+
+Why it works: pairing the smallest value with the largest balances every pair as evenly as possible, minimizing the largest pair sum.
+
+Time complexity is O(n log n), and the extra space is O(1) aside from sorting.
+
+#### Solution: [1885. Count Pairs in Two Arrays](https://leetcode.com/problems/count-pairs-in-two-arrays/) - Medium
+
+```python
+class Solution:
+    def countPairs(self, nums1, nums2):
+        differences = [first - second for first, second in zip(nums1, nums2)]
+        differences.sort()
+        left, right = 0, len(differences) - 1
+        answer = 0
+
+        while left < right:
+            if differences[left] + differences[right] > 0:
+                answer += right - left
+                right -= 1
+            else:
+                left += 1
+
+        return answer
+```
+
+Why it works: the required inequality becomes diff[i] + diff[j] > 0. After sorting, a valid right endpoint makes every index between left and right valid as well.
+
+Time complexity is O(n log n), and the extra space is O(n).
+
+#### Solution: [1898. Maximum Number of Removable Characters](https://leetcode.com/problems/maximum-number-of-removable-characters/) - Medium
+
+```python
+class Solution:
+    def maximumRemovals(self, s, p, removable):
+        def is_subsequence(count):
+            removed = set(removable[:count])
+            pattern_index = 0
+
+            for index, character in enumerate(s):
+                if index in removed:
+                    continue
+                if pattern_index < len(p) and character == p[pattern_index]:
+                    pattern_index += 1
+
+            return pattern_index == len(p)
+
+        left, right = 0, len(removable)
+        while left < right:
+            middle = (left + right + 1) // 2
+            if is_subsequence(middle):
+                left = middle
+            else:
+                right = middle - 1
+
+        return left
+```
+
+Why it works: removing more characters can only make subsequence matching harder, so binary search the largest removable prefix that still preserves p as a subsequence.
+
+Time complexity is O((n + k) log k), and the extra space is O(k).
+
+#### Solution: [1960. Maximum Product of the Length of Two Palindromic Substrings](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/) - Hard
+
+```python
+class Solution:
+    def maxProduct(self, s):
+        n = len(s)
+        odd = [0] * n
+        even = [0] * n
+        left = 0
+        right = -1
+
+        for index in range(n):
+            radius = 1 if index > right else min(odd[left + right - index], right - index + 1)
+            while index - radius >= 0 and index + radius < n and s[index - radius] == s[index + radius]:
+                radius += 1
+            odd[index] = radius
+            if index + radius - 1 > right:
+                left = index - radius + 1
+                right = index + radius - 1
+
+        left = 0
+        right = -1
+        for index in range(n):
+            radius = 0 if index > right else min(even[left + right - index + 1], right - index + 1)
+            while index - radius - 1 >= 0 and index + radius < n and s[index - radius - 1] == s[index + radius]:
+                radius += 1
+            even[index] = radius
+            if index + radius - 1 > right:
+                left = index - radius
+                right = index + radius - 1
+
+        ending = [0] * n
+        starting = [0] * n
+        for index, radius in enumerate(odd):
+            start = index - radius + 1
+            end = index + radius - 1
+            length = 2 * radius - 1
+            ending[end] = max(ending[end], length)
+            starting[start] = max(starting[start], length)
+
+        for index, radius in enumerate(even):
+            if radius == 0:
+                continue
+            start = index - radius
+            end = index + radius - 1
+            length = 2 * radius
+            ending[end] = max(ending[end], length)
+            starting[start] = max(starting[start], length)
+
+        for index in range(1, n):
+            ending[index] = max(ending[index], ending[index - 1])
+        for index in range(n - 2, -1, -1):
+            starting[index] = max(starting[index], starting[index + 1])
+
+        return max(ending[index] * starting[index + 1] for index in range(n - 1))
+```
+
+Why it works: Manacher-style radii identify every palindrome in linear time. Store the best palindrome ending at each position and starting at each position, then maximize the product across every split.
+
+Time complexity is O(n), and the extra space is O(n).
+
+---
+
+#### Solution: [1961. Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/) - Easy
+
+```python
+class Solution:
+    def isPrefixString(self, s, words):
+        index = 0
+
+        for word in words:
+            if s[index:index + len(word)] != word:
+                return False
+            index += len(word)
+            if index == len(s):
+                return True
+            if index > len(s):
+                return False
+
+        return False
+```
+
+Why it works: consume words from the beginning of s and stop as soon as their concatenation reaches the full string.
+
+Time complexity is O(n), and the extra space is O(1) excluding slices.
+
+#### Solution: [1963. Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) - Medium
+
+```python
+class Solution:
+    def minSwaps(self, s):
+        balance = 0
+        swaps = 0
+
+        for character in s:
+            balance += 1 if character == '[' else -1
+            if balance < 0:
+                swaps += 1
+                balance = 1
+
+        return swaps
+```
+
+Why it works: whenever a closing bracket makes the prefix invalid, swap in a later opening bracket. Each such correction fixes the earliest possible imbalance.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [1989. Maximum Number of People That Can Be Caught in Tag](https://leetcode.com/problems/maximum-number-of-people-that-can-be-caught-in-tag/) - Medium
+
+```python
+class Solution:
+    def catchMaximumAmountofPeople(self, team, dist):
+        catchers = [index for index, value in enumerate(team) if value == 1]
+        players = [index for index, value in enumerate(team) if value == 0]
+        catcher = player = 0
+        answer = 0
+
+        while catcher < len(catchers) and player < len(players):
+            if players[player] < catchers[catcher] - dist:
+                player += 1
+            elif catchers[catcher] < players[player] - dist:
+                catcher += 1
+            else:
+                answer += 1
+                catcher += 1
+                player += 1
+
+        return answer
+```
+
+Why it works: both position lists are sorted. Discard positions that are too far apart, and greedily match the first catcher and player that can reach each other.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [2000. Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) - Easy
+
+```python
+class Solution:
+    def reversePrefix(self, word, ch):
+        end = word.find(ch)
+        if end == -1:
+            return word
+        return word[:end + 1][::-1] + word[end + 1:]
+```
+
+Why it works: reverse exactly through the first occurrence of ch and leave the remaining suffix unchanged.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [2014. Longest Subsequence Repeated k Times](https://leetcode.com/problems/longest-subsequence-repeated-k-times/) - Hard
+
+```python
+from collections import deque, Counter
+
+class Solution:
+    def longestSubsequenceRepeatedK(self, s, k):
+        counts = Counter(s)
+        alphabet = sorted((character for character, count in counts.items() if count >= k), reverse=True)
+
+        def is_subsequence(candidate):
+            index = 0
+            repeated = candidate * k
+            for character in s:
+                if index < len(repeated) and character == repeated[index]:
+                    index += 1
+            return index == len(repeated)
+
+        queue = deque([''])
+        answer = ''
+        while queue:
+            candidate = queue.popleft()
+            if len(candidate) > len(answer) or len(candidate) == len(answer) and candidate > answer:
+                answer = candidate
+
+            for character in alphabet:
+                next_candidate = candidate + character
+                if is_subsequence(next_candidate):
+                    queue.append(next_candidate)
+
+        return answer
+```
+
+Why it works: only characters appearing at least k times can be used. Breadth-first construction tests every viable candidate and keeps the longest, lexicographically largest repeated subsequence.
+
+Time complexity depends on the bounded candidate space and subsequence checks; each check is O(n), with O(n) auxiliary space for the queue.
+
+#### Solution: [2035. Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) - Hard
+
+```python
+from bisect import bisect_left
+
+class Solution:
+    def minimumDifference(self, nums):
+        half = len(nums) // 2
+        total = sum(nums)
+
+        def subset_sums(values):
+            result = [[] for _ in range(len(values) + 1)]
+            for mask in range(1 << len(values)):
+                count = 0
+                current = 0
+                for index, value in enumerate(values):
+                    if mask >> index & 1:
+                        count += 1
+                        current += value
+                result[count].append(current)
+            return result
+
+        first = subset_sums(nums[:half])
+        second = subset_sums(nums[half:])
+        answer = float('inf')
+
+        for values in second:
+            values.sort()
+        for count, sums in enumerate(first):
+            needed = half - count
+            for value in sums:
+                target = total / 2 - value
+                index = bisect_left(second[needed], target)
+                for candidate in (index - 1, index):
+                    if 0 <= candidate < len(second[needed]):
+                        chosen = value + second[needed][candidate]
+                        answer = min(answer, abs(total - 2 * chosen))
+
+        return answer
+```
+
+Why it works: enumerate subset sums by element count for both halves, then binary search the complementary sum needed to make one partition as close as possible to half the total.
+
+Time complexity is O(n 2^(n/2)), and the extra space is O(2^(n/2)).
+
+#### Solution: [2046. Sort Linked List Already Sorted Using Absolute Values](https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/) - Medium
+
+```python
+class Solution:
+    def sortLinkedList(self, head):
+        negative = None
+        current = head
+
+        while current and current.val < 0:
+            next_node = current.next
+            current.next = negative
+            negative = current
+            current = next_node
+
+        positive = current
+        dummy = ListNode(0)
+        tail = dummy
+
+        while negative or positive:
+            if not positive or negative and negative.val <= positive.val:
+                tail.next = negative
+                negative = negative.next
+            else:
+                tail.next = positive
+                positive = positive.next
+            tail = tail.next
+
+        tail.next = None
+        return dummy.next
+```
+
+Why it works: the negative prefix becomes sorted after reversal, while the non-negative suffix is already sorted. Merge those two sorted lists.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2071. Maximum Number of Tasks You Can Assign](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/) - Hard
+
+```python
+from collections import deque
+
+class Solution:
+    def maxTaskAssign(self, tasks, workers, pills, strength):
+        tasks.sort()
+        workers.sort()
+
+        def can_assign(count):
+            available = deque()
+            task_index = 0
+            pills_left = pills
+
+            for worker in workers[-count:]:
+                while task_index < count and tasks[task_index] <= worker + strength:
+                    available.append(tasks[task_index])
+                    task_index += 1
+
+                if not available:
+                    return False
+                if available[0] <= worker:
+                    available.popleft()
+                elif pills_left:
+                    pills_left -= 1
+                    available.pop()
+                else:
+                    return False
+
+            return True
+
+        left, right = 0, min(len(tasks), len(workers))
+        while left < right:
+            middle = (left + right + 1) // 2
+            if can_assign(middle):
+                left = middle
+            else:
+                right = middle - 1
+
+        return left
+```
+
+Why it works: binary search the number of tasks. For a candidate count, process the strongest workers from weakest to strongest, using a pill on the hardest available task only when necessary.
+
+Time complexity is O((n + m) log min(n, m)), and the extra space is O(n).
+
+#### Solution: [2095. Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) - Medium
+
+```python
+class Solution:
+    def deleteMiddle(self, head):
+        if not head or not head.next:
+            return None
+
+        previous = None
+        slow = fast = head
+        while fast and fast.next:
+            previous = slow
+            slow = slow.next
+            fast = fast.next.next
+
+        previous.next = slow.next
+        return head
+```
+
+Why it works: the fast pointer moves twice as quickly, so when it reaches the end, slow points to the middle node and previous can unlink it.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2105. Watering Plants II](https://leetcode.com/problems/watering-plants-ii/) - Medium
+
+```python
+class Solution:
+    def minimumRefill(self, plants, capacityA, capacityB):
+        left, right = 0, len(plants) - 1
+        water_left, water_right = capacityA, capacityB
+        refills = 0
+
+        while left < right:
+            if water_left < plants[left]:
+                refills += 1
+                water_left = capacityA
+            water_left -= plants[left]
+            left += 1
+
+            if water_right < plants[right]:
+                refills += 1
+                water_right = capacityB
+            water_right -= plants[right]
+            right -= 1
+
+        if left == right and max(water_left, water_right) < plants[left]:
+            refills += 1
+
+        return refills
+```
+
+Why it works: two pointers simulate Alice and Bob watering from opposite ends. On the final plant, the person with more remaining water handles it if possible.
+
+Time complexity is O(n), and the extra space is O(1).
+
+---
+
+#### Solution: [2108. Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) - Easy
+
+```python
+class Solution:
+    def firstPalindrome(self, words):
+        for word in words:
+            if word == word[::-1]:
+                return word
+        return ''
+```
+
+Why it works: scan the words in order and return the first word that equals its reverse.
+
+Time complexity is O(nL), and the extra space is O(L), where L is the maximum word length.
+
+#### Solution: [2109. Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/) - Medium
+
+```python
+class Solution:
+    def addSpaces(self, s, spaces):
+        result = []
+        space_index = 0
+
+        for index, character in enumerate(s):
+            if space_index < len(spaces) and index == spaces[space_index]:
+                result.append(' ')
+                space_index += 1
+            result.append(character)
+
+        return ''.join(result)
+```
+
+Why it works: a pointer tracks the next insertion position while a single pass copies the original characters in order.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [2110. Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/) - Medium
+
+```python
+class Solution:
+    def getDescentPeriods(self, prices):
+        answer = 0
+        length = 0
+
+        for index, price in enumerate(prices):
+            if index > 0 and prices[index - 1] - price == 1:
+                length += 1
+            else:
+                length = 1
+            answer += length
+
+        return answer
+```
+
+Why it works: every valid descent ending at the current day contributes one new period for each day in the current consecutive run.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2122. Recover the Original Array](https://leetcode.com/problems/recover-the-original-array/) - Hard
+
+```python
+from collections import Counter
+
+class Solution:
+    def recoverArray(self, nums):
+        nums.sort()
+        smallest = nums[0]
+
+        for index in range(1, len(nums)):
+            difference = nums[index] - smallest
+            if difference <= 0 or difference % 2:
+                continue
+
+            half = difference // 2
+            counts = Counter(nums)
+            lower = []
+            valid = True
+
+            for value in nums:
+                if counts[value] == 0:
+                    continue
+                if counts[value + difference] == 0:
+                    valid = False
+                    break
+                lower.append(value + half)
+                counts[value] -= 1
+                counts[value + difference] -= 1
+
+            if valid:
+                return lower
+
+        return []
+```
+
+Why it works: the smallest transformed value must pair with a value exactly 2k larger. Try each possible positive difference, consume pairs with a frequency map, and return the midpoint values when every number is matched.
+
+Time complexity is O(n^2), and the extra space is O(n).
+
+#### Solution: [2130. Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) - Medium
+
+```python
+class Solution:
+    def pairSum(self, head):
+        values = []
+        while head:
+            values.append(head.val)
+            head = head.next
+
+        answer = 0
+        left, right = 0, len(values) - 1
+        while left < right:
+            answer = max(answer, values[left] + values[right])
+            left += 1
+            right -= 1
+
+        return answer
+```
+
+Why it works: store the list values, then use two pointers to pair the first half with the mirrored second half.
+
+Time complexity is O(n), and the extra space is O(n).
+
+---
+
+#### Solution: [2300. Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) - Medium
+
+```python
+from bisect import bisect_left
+
+class Solution:
+    def successfulPairs(self, spells, potions, success):
+        potions.sort()
+        result = []
+
+        for spell in spells:
+            needed = (success + spell - 1) // spell
+            result.append(len(potions) - bisect_left(potions, needed))
+
+        return result
+```
+
+Why it works: sort the potion strengths, then binary search the first potion whose product with the current spell reaches success.
+
+Time complexity is O((n + m) log m), and the extra space is O(1) aside from sorting and the result.
+
+#### Solution: [2330. Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv/) - Easy
+
+```python
+class Solution:
+    def makePalindrome(self, s):
+        mismatches = 0
+        left, right = 0, len(s) - 1
+
+        while left < right:
+            if s[left] != s[right]:
+                mismatches += 1
+            left += 1
+            right -= 1
+
+        return mismatches <= 2
+```
+
+Why it works: one replacement can fix each mismatched mirrored pair, so count the mismatches and accept at most two.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2332. The Latest Time to Catch a Bus](https://leetcode.com/problems/the-latest-time-to-catch-a-bus/) - Medium
+
+```python
+class Solution:
+    def latestTimeCatchTheBus(self, buses, passengers, capacity):
+        buses.sort()
+        passengers.sort()
+        passenger_index = 0
+        boarded = set()
+        latest = 0
+
+        for bus in buses:
+            count = 0
+            last_boarded = None
+            while passenger_index < len(passengers) and passengers[passenger_index] <= bus and count < capacity:
+                last_boarded = passengers[passenger_index]
+                boarded.add(last_boarded)
+                passenger_index += 1
+                count += 1
+
+            latest = bus if count < capacity else last_boarded
+
+        while latest in boarded:
+            latest -= 1
+
+        return latest
+```
+
+Why it works: simulate boarding in chronological order. The latest arrival is the bus time if a seat remains, otherwise the last passenger boarded, then move backward past occupied times.
+
+Time complexity is O(n log n + m log m), and the extra space is O(m).
+
+#### Solution: [2337. Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/) - Medium
+
+```python
+class Solution:
+    def canChange(self, start, target):
+        start_pieces = [(character, index) for index, character in enumerate(start) if character != '_']
+        target_pieces = [(character, index) for index, character in enumerate(target) if character != '_']
+
+        if len(start_pieces) != len(target_pieces):
+            return False
+
+        for (start_character, start_index), (target_character, target_index) in zip(start_pieces, target_pieces):
+            if start_character != target_character:
+                return False
+            if start_character == 'L' and start_index < target_index:
+                return False
+            if start_character == 'R' and start_index > target_index:
+                return False
+
+        return True
+```
+
+Why it works: removing underscores preserves piece order. L can only move left and R can only move right, so compare each piece’s allowed displacement.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [2367. Number of Arithmetic Triplets](https://leetcode.com/problems/number-of-arithmetic-triplets/) - Easy
+
+```python
+class Solution:
+    def arithmeticTriplets(self, nums, diff):
+        values = set(nums)
+        return sum(value + diff in values and value + 2 * diff in values for value in nums)
+```
+
+Why it works: nums is strictly increasing, so each value can be the first element of at most one arithmetic triplet. Check the other two values in a set.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [2396. Strictly Palindromic Number](https://leetcode.com/problems/strictly-palindromic-number/) - Medium
+
+```python
+class Solution:
+    def isStrictlyPalindromic(self, n):
+        return False
+```
+
+Why it works: every integer n >= 4 fails to be palindromic in at least one base from 2 through n - 2, so the required condition is impossible.
+
+Time complexity is O(1), and the extra space is O(1).
+
+#### Solution: [2406. Divide Intervals Into Minimum Number of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/) - Medium
+
+```python
+class Solution:
+    def minGroups(self, intervals):
+        starts = sorted(interval[0] for interval in intervals)
+        ends = sorted(interval[1] for interval in intervals)
+        start = end = 0
+        groups = 0
+
+        while start < len(starts):
+            if starts[start] <= ends[end]:
+                groups += 1
+                start += 1
+            else:
+                end += 1
+                start += 1
+
+        return groups
+```
+
+Why it works: a new group is needed when the next interval starts before the earliest active interval ends. Otherwise, one existing group becomes available.
+
+Time complexity is O(n log n), and the extra space is O(n).
+
+#### Solution: [2410. Maximum Matching of Players With Trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/) - Medium
+
+```python
+class Solution:
+    def matchPlayersAndTrainers(self, players, trainers):
+        players.sort()
+        trainers.sort()
+        player = trainer = 0
+        matches = 0
+
+        while player < len(players) and trainer < len(trainers):
+            if players[player] <= trainers[trainer]:
+                matches += 1
+                player += 1
+            trainer += 1
+
+        return matches
+```
+
+Why it works: match the weakest remaining player with the weakest trainer who can handle them, preserving stronger trainers for stronger players.
+
+Time complexity is O(n log n + m log m), and the extra space is O(1) aside from sorting.
+
+#### Solution: [2422. Merge Operations to Turn Array Into a Palindrome](https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/) - Medium
+
+```python
+class Solution:
+    def minimumOperations(self, nums):
+        left, right = 0, len(nums) - 1
+        operations = 0
+
+        while left < right:
+            if nums[left] == nums[right]:
+                left += 1
+                right -= 1
+            elif nums[left] < nums[right]:
+                nums[left + 1] += nums[left]
+                left += 1
+                operations += 1
+            else:
+                nums[right - 1] += nums[right]
+                right -= 1
+                operations += 1
+
+        return operations
+```
+
+Why it works: compare the two ends. Merge the smaller side into its neighbor because it must be combined before the ends can match.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2441. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) - Easy
+
+```python
+class Solution:
+    def findMaxK(self, nums):
+        values = set(nums)
+        return max((value for value in values if value > 0 and -value in values), default=-1)
+```
+
+Why it works: a positive value qualifies exactly when its negative is present, so scan the set of values and keep the largest qualifying positive.
+
+Time complexity is O(n), and the extra space is O(n).
+
+---
+
+#### Solution: [2460. Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/) - Easy
+
+```python
+class Solution:
+    def applyOperations(self, nums):
+        for index in range(len(nums) - 1):
+            if nums[index] == nums[index + 1]:
+                nums[index] *= 2
+                nums[index + 1] = 0
+
+        write = 0
+        for value in nums:
+            if value:
+                nums[write] = value
+                write += 1
+
+        while write < len(nums):
+            nums[write] = 0
+            write += 1
+
+        return nums
+```
+
+Why it works: perform each adjacent merge from left to right, then use a write pointer to compact non-zero values and fill the remaining suffix with zeros.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2462. Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/) - Medium
+
+```python
+import heapq
+
+class Solution:
+    def totalCost(self, costs, k, candidates):
+        left_heap = []
+        right_heap = []
+        left = 0
+        right = len(costs) - 1
+
+        for _ in range(candidates):
+            if left <= right:
+                heapq.heappush(left_heap, costs[left])
+                left += 1
+        for _ in range(candidates):
+            if left <= right:
+                heapq.heappush(right_heap, costs[right])
+                right -= 1
+
+        answer = 0
+        for _ in range(k):
+            if not right_heap or left_heap and left_heap[0] <= right_heap[0]:
+                answer += heapq.heappop(left_heap)
+                if left <= right:
+                    heapq.heappush(left_heap, costs[left])
+                    left += 1
+            else:
+                answer += heapq.heappop(right_heap)
+                if left <= right:
+                    heapq.heappush(right_heap, costs[right])
+                    right -= 1
+
+        return answer
+```
+
+Why it works: two heaps represent the available candidates from both ends. Hire the cheaper end and replace it from the same side while the unseen ranges do not overlap.
+
+Time complexity is O((n + k) log candidates), and the extra space is O(candidates).
+
+#### Solution: [2465. Number of Distinct Averages](https://leetcode.com/problems/number-of-distinct-averages/) - Easy
+
+```python
+class Solution:
+    def distinctAverages(self, nums):
+        nums.sort()
+        averages = set()
+        left, right = 0, len(nums) - 1
+
+        while left < right:
+            averages.add(nums[left] + nums[right])
+            left += 1
+            right -= 1
+
+        return len(averages)
+```
+
+Why it works: after sorting, repeatedly pairing the smallest and largest values produces every required average, and doubling the average does not change distinctness.
+
+Time complexity is O(n log n), and the extra space is O(n).
+
+#### Solution: [2472. Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/) - Hard
+
+```python
+class Solution:
+    def maxPalindromes(self, s, k):
+        n = len(s)
+        palindrome = [[False] * n for _ in range(n)]
+        best = [0] * (n + 1)
+
+        for end in range(n):
+            best[end + 1] = best[end]
+            for start in range(end, -1, -1):
+                if s[start] == s[end] and (end - start < 2 or palindrome[start + 1][end - 1]):
+                    palindrome[start][end] = True
+                    if end - start + 1 >= k:
+                        best[end + 1] = max(best[end + 1], best[start] + 1)
+
+        return best[n]
+```
+
+Why it works: dynamic programming records palindromic intervals and the best count for every prefix. When a palindrome ends at the current position, append it only after the prefix before its start.
+
+Time complexity is O(n^2), and the extra space is O(n^2).
+
+#### Solution: [2486. Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/) - Medium
+
+```python
+class Solution:
+    def appendCharacters(self, s, t):
+        target_index = 0
+        for character in s:
+            if target_index < len(t) and character == t[target_index]:
+                target_index += 1
+
+        return len(t) - target_index
+```
+
+Why it works: match the longest prefix of t that already appears as a subsequence of s. The unmatched suffix must be appended.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2491. Divide Players Into Teams of Equal Skill](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/) - Medium
+
+```python
+class Solution:
+    def dividePlayers(self, skill):
+        skill.sort()
+        left, right = 0, len(skill) - 1
+        target = skill[left] + skill[right]
+        chemistry = 0
+
+        while left < right:
+            if skill[left] + skill[right] != target:
+                return -1
+            chemistry += skill[left] * skill[right]
+            left += 1
+            right -= 1
+
+        return chemistry
+```
+
+Why it works: sorting makes the smallest player pair naturally with the largest. Every pair must have the same target skill sum, so any mismatch makes a valid division impossible.
+
+Time complexity is O(n log n), and the extra space is O(1) aside from sorting.
+
+#### Solution: [2503. Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/) - Hard
+
+```python
+import heapq
+
+class Solution:
+    def maxPoints(self, grid, queries):
+        rows, columns = len(grid), len(grid[0])
+        answer = [0] * len(queries)
+        ordered = sorted(enumerate(queries), key=lambda item: item[1])
+        heap = [(grid[0][0], 0, 0)]
+        visited = {(0, 0)}
+        points = 0
+
+        for query_index, limit in ordered:
+            while heap and heap[0][0] < limit:
+                value, row, column = heapq.heappop(heap)
+                points += 1
+                for next_row, next_column in ((row - 1, column), (row + 1, column), (row, column - 1), (row, column + 1)):
+                    if 0 <= next_row < rows and 0 <= next_column < columns and (next_row, next_column) not in visited:
+                        visited.add((next_row, next_column))
+                        heapq.heappush(heap, (grid[next_row][next_column], next_row, next_column))
+            answer[query_index] = points
+
+        return answer
+```
+
+Why it works: process queries in increasing order and expand reachable cells through a min-heap. Every popped cell has the smallest frontier value and is reachable under the current query.
+
+Time complexity is O((mn + q) log(mn)), and the extra space is O(mn).
+
+#### Solution: [2511. Maximum Enemy Forts That Can Be Captured](https://leetcode.com/problems/maximum-enemy-forts-that-can-be-captured/) - Easy
+
+```python
+class Solution:
+    def captureForts(self, forts):
+        answer = 0
+        last_fort = -1
+
+        for index, value in enumerate(forts):
+            if value == 1:
+                last_fort = index
+            elif value == -1 and last_fort != -1:
+                answer = max(answer, index - last_fort - 1)
+                last_fort = -1
+
+        last_fort = -1
+        for index in range(len(forts) - 1, -1, -1):
+            if forts[index] == -1:
+                last_fort = index
+            elif forts[index] == 1 and last_fort != -1:
+                answer = max(answer, last_fort - index - 1)
+                last_fort = -1
+
+        return answer
+```
+
+Why it works: a capture is possible only across a contiguous run of empty forts between an enemy and your fort. Scan in both directions to cover either orientation.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2540. Minimum Common Value](https://leetcode.com/problems/minimum-common-value/) - Easy
+
+```python
+class Solution:
+    def getCommon(self, nums1, nums2):
+        first = second = 0
+
+        while first < len(nums1) and second < len(nums2):
+            if nums1[first] == nums2[second]:
+                return nums1[first]
+            if nums1[first] < nums2[second]:
+                first += 1
+            else:
+                second += 1
+
+        return -1
+```
+
+Why it works: both arrays are sorted, so advance the pointer at the smaller value until the first common value is found.
+
+Time complexity is O(n + m), and the extra space is O(1).
+
+#### Solution: [2562. Find the Array Concatenation Value](https://leetcode.com/problems/find-the-array-concatenation-value/) - Easy
+
+```python
+class Solution:
+    def findTheArrayConcVal(self, nums):
+        left, right = 0, len(nums) - 1
+        answer = 0
+
+        while left <= right:
+            if left == right:
+                answer += nums[left]
+            else:
+                answer += int(str(nums[left]) + str(nums[right]))
+            left += 1
+            right -= 1
+
+        return answer
+```
+
+Why it works: two pointers take values from opposite ends and concatenate each pair in order, with the center value added once when the array length is odd.
+
+Time complexity is O(n), and the extra space is O(1) aside from integer conversion.
+
+---
+
+#### Solution: [2563. Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) - Medium
+
+```python
+class Solution:
+    def countFairPairs(self, nums, lower, upper):
+        nums.sort()
+
+        def count_at_most(limit):
+            left, right = 0, len(nums) - 1
+            answer = 0
+            while left < right:
+                if nums[left] + nums[right] <= limit:
+                    answer += right - left
+                    left += 1
+                else:
+                    right -= 1
+            return answer
+
+        return count_at_most(upper) - count_at_most(lower - 1)
+```
+
+Why it works: count pairs with sum at most each boundary. Their difference leaves exactly the pairs whose sum lies in [lower, upper].
+
+Time complexity is O(n log n), and the extra space is O(1) aside from sorting.
+
+#### Solution: [2565. Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/) - Hard
+
+```python
+class Solution:
+    def minimumScore(self, s, t):
+        prefix = [-1] * len(t)
+        suffix = [len(s)] * len(t)
+        source_index = 0
+
+        for target_index, character in enumerate(t):
+            while source_index < len(s) and s[source_index] != character:
+                source_index += 1
+            if source_index == len(s):
+                break
+            prefix[target_index] = source_index
+            source_index += 1
+
+        source_index = len(s) - 1
+        for target_index in range(len(t) - 1, -1, -1):
+            while source_index >= 0 and s[source_index] != t[target_index]:
+                source_index -= 1
+            if source_index < 0:
+                break
+            suffix[target_index] = source_index
+            source_index -= 1
+
+        answer = len(t)
+        right = 0
+        for left in range(len(t) + 1):
+            if left > 0 and prefix[left - 1] == -1:
+                break
+            while right < len(t) and (left == 0 or suffix[right] <= prefix[left - 1]):
+                right += 1
+            answer = min(answer, right - left)
+
+        return answer
+```
+
+Why it works: prefix and suffix arrays identify which parts of t can remain matched. The removed middle section is minimized by sliding the boundary between those two matched parts.
+
+Time complexity is O(n + m), and the extra space is O(m).
+
+#### Solution: [2570. Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) - Easy
+
+```python
+class Solution:
+    def mergeArrays(self, nums1, nums2):
+        first = second = 0
+        result = []
+
+        while first < len(nums1) and second < len(nums2):
+            if nums1[first][0] == nums2[second][0]:
+                result.append([nums1[first][0], nums1[first][1] + nums2[second][1]])
+                first += 1
+                second += 1
+            elif nums1[first][0] < nums2[second][0]:
+                result.append(nums1[first])
+                first += 1
+            else:
+                result.append(nums2[second])
+                second += 1
+
+        result.extend(nums1[first:])
+        result.extend(nums2[second:])
+        return result
+```
+
+Why it works: merge the two sorted ID lists, combining values whenever both pointers reference the same ID.
+
+Time complexity is O(n + m), and the extra space is O(n + m) for the result.
+
+#### Solution: [2576. Find the Maximum Number of Marked Indices](https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/) - Medium
+
+```python
+class Solution:
+    def maxNumOfMarkedIndices(self, nums):
+        nums.sort()
+        left, right = 0, len(nums) // 2
+        pairs = 0
+
+        while left < len(nums) // 2 and right < len(nums):
+            if nums[left] * 2 <= nums[right]:
+                pairs += 1
+                left += 1
+                right += 1
+            else:
+                right += 1
+
+        return pairs * 2
+```
+
+Why it works: use the smaller half as possible first elements and greedily match each with the earliest larger value at least twice as large.
+
+Time complexity is O(n log n), and the extra space is O(1) aside from sorting.
+
+#### Solution: [2592. Maximize Greatness of an Array](https://leetcode.com/problems/maximize-greatness-of-an-array/) - Medium
+
+```python
+class Solution:
+    def maximizeGreatness(self, nums):
+        nums.sort()
+        smaller = 0
+
+        for value in nums:
+            if value > nums[smaller]:
+                smaller += 1
+
+        return smaller
+```
+
+Why it works: match each value against the smallest still-unmatched value it can exceed. Each successful match contributes one position of greatness.
+
+Time complexity is O(n log n), and the extra space is O(1) aside from sorting.
+
+#### Solution: [2604. Minimum Time to Eat All Grains](https://leetcode.com/problems/minimum-time-to-eat-all-grains/) - Hard
+
+```python
+class Solution:
+    def minimumTime(self, hens, grains):
+        hens.sort()
+        grains.sort()
+
+        def can_finish(time):
+            grain = 0
+            for hen in hens:
+                if grain == len(grains):
+                    return True
+
+                first = grains[grain]
+                if first > hen + time:
+                    return False
+
+                if first <= hen:
+                    distance_left = hen - first
+                    reach = max(hen + time - 2 * distance_left,
+                                hen + (time - distance_left) // 2)
+                else:
+                    reach = hen + time
+
+                while grain < len(grains) and grains[grain] <= reach:
+                    grain += 1
+
+            return grain == len(grains)
+
+        low, high = 0, 10**9
+        while low < high:
+            middle = (low + high) // 2
+            if can_finish(middle):
+                high = middle
+            else:
+                low = middle + 1
+
+        return low
+```
+
+Why it works: for a candidate time, each hen consumes the earliest remaining grains it can reach. Binary search finds the smallest time for which every grain can be covered.
+
+Time complexity is O((n + m) log C), where C is the search bound, and the extra space is O(1) aside from sorting.
+
+#### Solution: [2674. Split a Circular Linked List](https://leetcode.com/problems/split-a-circular-linked-list/) - Medium
+
+```python
+class Solution:
+    def splitCircularLinkedList(self, list):
+        slow = fast = list
+        while fast.next != list and fast.next.next != list:
+            slow = slow.next
+            fast = fast.next.next
+
+        if fast.next.next == list:
+            fast = fast.next
+
+        second = slow.next
+        slow.next = list
+        fast.next = second
+        return [list, second]
+```
+
+Why it works: slow and fast locate the midpoint of the circular list. Reconnect the tail to the second head and the midpoint to the first head to form two circular lists.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2697. Lexicographically Smallest Palindrome](https://leetcode.com/problems/lexicographically-smallest-palindrome/) - Easy
+
+```python
+class Solution:
+    def makeSmallestPalindrome(self, s):
+        characters = list(s)
+        left, right = 0, len(characters) - 1
+
+        while left < right:
+            characters[left] = characters[right] = min(characters[left], characters[right])
+            left += 1
+            right -= 1
+
+        return ''.join(characters)
+```
+
+Why it works: each mirrored pair must become equal. Choosing the smaller character at every pair gives the lexicographically smallest palindrome.
+
+Time complexity is O(n), and the extra space is O(n).
+
+#### Solution: [2824. Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) - Easy
+
+```python
+class Solution:
+    def countPairs(self, nums, target):
+        nums.sort()
+        left, right = 0, len(nums) - 1
+        answer = 0
+
+        while left < right:
+            if nums[left] + nums[right] < target:
+                answer += right - left
+                left += 1
+            else:
+                right -= 1
+
+        return answer
+```
+
+Why it works: when the smallest and largest values form a sum below target, every value between left and right also forms a valid pair with left.
+
+Time complexity is O(n log n), and the extra space is O(1) aside from sorting.
+
+#### Solution: [2825. Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/) - Medium
+
+```python
+class Solution:
+    def canMakeSubsequence(self, str1, str2):
+        target_index = 0
+
+        for character in str1:
+            if target_index == len(str2):
+                break
+            next_character = chr((ord(character) - ord('a') + 1) % 26 + ord('a'))
+            if character == str2[target_index] or next_character == str2[target_index]:
+                target_index += 1
+
+        return target_index == len(str2)
+```
+
+Why it works: scan str1 once and match each needed character either directly or by its allowed single cyclic increment.
+
+Time complexity is O(n), and the extra space is O(1).
+
+---
+
+#### Solution: [2838. Maximum Coins Heroes Can Collect](https://leetcode.com/problems/maximum-coins-heroes-can-collect/) - Medium
+
+```python
+from bisect import bisect_right
+
+class Solution:
+    def maximumCoins(self, heroes, monsters):
+        monsters.sort()
+        powers = [power for power, _ in monsters]
+        prefix = [0]
+        for _, coins in monsters:
+            prefix.append(prefix[-1] + coins)
+
+        return [prefix[bisect_right(powers, hero)] for hero in heroes]
+```
+
+Why it works: sort monsters by power and build prefix coin totals. Binary search finds the monsters each hero can defeat.
+
+Time complexity is O(m log m + h log m), and the extra space is O(m).
+
+#### Solution: [2856. Minimum Array Length After Pair Removals](https://leetcode.com/problems/minimum-array-length-after-pair-removals/) - Medium
+
+```python
+class Solution:
+    def minLengthAfterRemovals(self, nums):
+        middle = (len(nums) + 1) // 2
+        left, right = 0, middle
+        removed = 0
+
+        while left < middle and right < len(nums):
+            if nums[left] < nums[right]:
+                removed += 2
+                left += 1
+                right += 1
+            else:
+                right += 1
+
+        return len(nums) - removed
+```
+
+Why it works: pair each value in the first half with a strictly larger value in the second half. Every such match removes two elements, and unmatched elements remain.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2903. Find Indices With Index and Value Difference I](https://leetcode.com/problems/find-indices-with-index-and-value-difference-i/) - Easy
+
+```python
+class Solution:
+    def findIndices(self, nums, indexDifference, valueDifference):
+        minimum_index = maximum_index = 0
+
+        for right in range(indexDifference, len(nums)):
+            candidate = right - indexDifference
+            if nums[candidate] < nums[minimum_index]:
+                minimum_index = candidate
+            if nums[candidate] > nums[maximum_index]:
+                maximum_index = candidate
+
+            if nums[right] - nums[minimum_index] >= valueDifference:
+                return [minimum_index, right]
+            if nums[maximum_index] - nums[right] >= valueDifference:
+                return [maximum_index, right]
+
+        return [-1, -1]
+```
+
+Why it works: maintain the minimum and maximum values among indices far enough behind the current right pointer, so each value-difference condition is checked in constant time.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2905. Find Indices With Index and Value Difference II](https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/) - Medium
+
+```python
+class Solution:
+    def findIndices(self, nums, indexDifference, valueDifference):
+        minimum_index = maximum_index = 0
+
+        for right in range(indexDifference, len(nums)):
+            candidate = right - indexDifference
+            if nums[candidate] < nums[minimum_index]:
+                minimum_index = candidate
+            if nums[candidate] > nums[maximum_index]:
+                maximum_index = candidate
+
+            if nums[right] - nums[minimum_index] >= valueDifference:
+                return [minimum_index, right]
+            if nums[maximum_index] - nums[right] >= valueDifference:
+                return [maximum_index, right]
+
+        return [-1, -1]
+```
+
+Why it works: the index constraint is handled by the delayed candidate pointer, while running extrema capture every possible earlier value efficiently.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2911. Minimum Changes to Make K Semi-palindromes](https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/) - Hard
+
+```python
+class Solution:
+    def minimumChanges(self, s, k):
+        n = len(s)
+        factors = [[] for _ in range(n + 1)]
+        for divisor in range(1, n):
+            for length in range(divisor * 2, n + 1, divisor):
+                factors[length].append(divisor)
+
+        cost = [[0] * n for _ in range(n)]
+        for left in range(n):
+            for right in range(left + 1, n):
+                length = right - left + 1
+                best = length
+                for step in factors[length]:
+                    changes = 0
+                    for offset in range(step):
+                        first, last = left + offset, right - step + 1 + offset
+                        while first < last:
+                            if s[first] != s[last]:
+                                changes += 1
+                            first += step
+                            last -= step
+                    best = min(best, changes)
+                cost[left][right] = best
+
+        infinity = n * n
+        dp = [[infinity] * (k + 1) for _ in range(n + 1)]
+        dp[n][0] = 0
+
+        for start in range(n - 1, -1, -1):
+            for parts in range(1, k + 1):
+                for end in range(start + 1, n):
+                    if n - end - 1 < parts - 1:
+                        continue
+                    dp[start][parts] = min(dp[start][parts], cost[start][end] + dp[end + 1][parts - 1])
+
+        return dp[0][k]
+```
+
+Why it works: precompute the minimum changes for every substring to become a semi-palindrome over each proper divisor of its length, then use dynamic programming to split the string into k parts.
+
+Time complexity is O(n^3), and the extra space is O(n^2).
+
+#### Solution: [2938. Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/) - Medium
+
+```python
+class Solution:
+    def minimumSteps(self, s):
+        white = 0
+        swaps = 0
+
+        for character in s:
+            if character == '1':
+                white += 1
+            else:
+                swaps += white
+
+        return swaps
+```
+
+Why it works: every black ball contributes one swap for each white ball before it, so count the whites already seen while scanning left to right.
+
+Time complexity is O(n), and the extra space is O(1).
+
+#### Solution: [2970. Count the Number of Incremovable Subarrays I](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/) - Easy
+
+```python
+class Solution:
+    def incremovableSubarrayCount(self, nums):
+        answer = 0
+
+        for left in range(len(nums)):
+            for right in range(left, len(nums)):
+                remaining = nums[:left] + nums[right + 1:]
+                if all(remaining[index - 1] < remaining[index] for index in range(1, len(remaining))):
+                    answer += 1
+
+        return answer
+```
+
+Why it works: enumerate every non-empty removal interval and directly verify that the concatenated remaining prefix and suffix are strictly increasing.
+
+Time complexity is O(n^3), and the extra space is O(n).
+
+#### Solution: [2972. Count the Number of Incremovable Subarrays II](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/) - Hard
+
+```python
+from bisect import bisect_right
+
+class Solution:
+    def incremovableSubarrayCount(self, nums):
+        n = len(nums)
+        suffix_start = n - 1
+        while suffix_start > 0 and nums[suffix_start - 1] < nums[suffix_start]:
+            suffix_start -= 1
+
+        answer = n - suffix_start + 1
+        left = 0
+        while left < n and (left == 0 or nums[left - 1] < nums[left]):
+            first_valid_suffix = max(suffix_start, left + 1)
+            position = bisect_right(nums, nums[left], first_valid_suffix, n)
+            answer += n - position + 1
+            left += 1
+
+        return answer
+```
+
+Why it works: every valid removal leaves an increasing prefix and suffix whose boundary values are ordered. For each increasing prefix, binary search finds the earliest compatible suffix boundary.
+
+Time complexity is O(n log n), and the extra space is O(1).
+
+#### Solution: [3006. Find Beautiful Indices in the Given Array I](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/) - Easy
+
+```python
+class Solution:
+    def beautifulIndices(self, s, a, b, k):
+        def occurrences(pattern):
+            result = []
+            start = 0
+            while True:
+                index = s.find(pattern, start)
+                if index == -1:
+                    return result
+                result.append(index)
+                start = index + 1
+
+        positions_a = occurrences(a)
+        positions_b = occurrences(b)
+        result = []
+        pointer = 0
+
+        for position in positions_a:
+            while pointer < len(positions_b) and positions_b[pointer] < position - k:
+                pointer += 1
+            if pointer < len(positions_b) and positions_b[pointer] <= position + k:
+                result.append(position)
+
+        return result
+```
+
+Why it works: collect sorted occurrence positions, then use a pointer into b’s positions to test whether each a occurrence has a nearby b occurrence.
+
+Time complexity is O(n + number of matches), and the extra space is O(n).
+
+---
+
+## 9. Remaining problems from the attached Two Pointers list
+
+These 56 problems were present in the attachment but do not yet have a direct solution above. They are listed here as the next solution backlog.
+
 - [2868. The Wording Game](https://leetcode.com/problems/the-wording-game/) - Hard
-- [2903. Find Indices With Index and Value Difference I](https://leetcode.com/problems/find-indices-with-index-and-value-difference-i/) - Easy
-- [2905. Find Indices With Index and Value Difference II](https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/) - Medium
-- [2911. Minimum Changes to Make K Semi-palindromes](https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/) - Hard
-- [2938. Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/) - Medium
-- [2970. Count the Number of Incremovable Subarrays I](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/) - Easy
-- [2972. Count the Number of Incremovable Subarrays II](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/) - Hard
-- [3006. Find Beautiful Indices in the Given Array I](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/) - Medium
 - [3008. Find Beautiful Indices in the Given Array II](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-ii/) - Hard
 - [3132. Find the Integer Added to Array II](https://leetcode.com/problems/find-the-integer-added-to-array-ii/) - Medium
 - [3186. Maximum Total Damage With Spell Casting](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/) - Medium
