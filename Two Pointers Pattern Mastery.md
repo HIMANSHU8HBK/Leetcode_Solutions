@@ -3179,168 +3179,168 @@ class Solution:
 
 Why it works: use the smallest available number for an increase and the largest available number for a decrease, leaving the final number forced.
 
-- 948. Bag of Tokens — Medium
-- 962. Maximum Width Ramp — Medium
-- 969. Pancake Sorting — Medium
-- 1023. Camelcase Matching — Medium
-- 1048. Longest String Chain — Medium
-- 1055. Shortest Way to Form String — Medium
-- 1089. Duplicate Zeros — Easy
-- 1099. Two Sum Less Than K — Easy
-- 1147. Longest Chunked Palindrome Decomposition — Hard
-- 1163. Last Substring in Lexicographical Order — Hard
-- 1214. Two Sum BSTs — Medium
-- 1229. Meeting Scheduler — Medium
-- 1237. Find Positive Integer Solution for a Given Equation — Medium
-- 1265. Print Immutable Linked List in Reverse — Medium
-- 1332. Remove Palindromic Subsequences — Easy
-- 1346. Check If N and Its Double Exist — Easy
-- 1385. Find the Distance Value Between Two Arrays — Easy
-- 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence — Easy
-- 1471. The k Strongest Values in an Array — Medium
-- 1498. Number of Subsequences That Satisfy the Given Sum Condition — Medium
-- 1508. Range Sum of Sorted Subarray Sums — Medium
-- 1537. Get the Maximum Score — Hard
-- 1570. Dot Product of Two Sparse Vectors — Medium
-- 1574. Shortest Subarray to be Removed to Make Array Sorted — Medium
-- 1577. Number of Ways Where Square of Number Is Equal to Product of Two Numbers — Medium
-- 1616. Split Two Strings to Make Palindrome — Medium
-- 1634. Add Two Polynomials Represented as Linked Lists — Medium
-- 1650. Lowest Common Ancestor of a Binary Tree III — Medium
-- 1679. Max Number of K-Sum Pairs — Medium
-- 1697. Checking Existence of Edge Length Limited Paths — Hard
-- 1712. Ways to Split Array Into Three Subarrays — Medium
-- 1721. Swapping Nodes in a Linked List — Medium
-- 1750. Minimum Length of String After Deleting Similar Ends — Medium
-- 1754. Largest Merge Of Two Strings — Medium
-- 1755. Closest Subsequence Sum — Hard
-- 1764. Form Array by Concatenating Subarrays of Another Array — Medium
-- 1768. Merge Strings Alternately — Easy
-- 1782. Count Pairs Of Nodes — Hard
-- 1793. Maximum Score of a Good Subarray — Hard
-- 1813. Sentence Similarity III — Medium
-- 1826. Faulty Sensor — Easy
-- 1842. Next Palindrome Using Same Digits — Hard
-- 1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number — Medium
-- 1855. Maximum Distance Between a Pair of Values — Medium
-- 1861. Rotating the Box — Medium
-- 1868. Product of Two Run-Length Encoded Arrays — Medium
-- 1877. Minimize Maximum Pair Sum in Array — Medium
-- 1885. Count Pairs in Two Arrays — Medium
-- 1898. Maximum Number of Removable Characters — Medium
-- 1960. Maximum Product of the Length of Two Palindromic Substrings — Hard
-- 1961. Check If String Is a Prefix of Array — Easy
-- 1963. Minimum Number of Swaps to Make the String Balanced — Medium
-- 1989. Maximum Number of People That Can Be Caught in Tag — Medium
-- 2000. Reverse Prefix of Word — Easy
-- 2014. Longest Subsequence Repeated k Times — Hard
-- 2035. Partition Array Into Two Arrays to Minimize Sum Difference — Hard
-- 2046. Sort Linked List Already Sorted Using Absolute Values — Medium
-- 2071. Maximum Number of Tasks You Can Assign — Hard
-- 2095. Delete the Middle Node of a Linked List — Medium
-- 2105. Watering Plants II — Medium
-- 2108. Find First Palindromic String in the Array — Easy
-- 2109. Adding Spaces to a String — Medium
-- 2110. Number of Smooth Descent Periods of a Stock — Medium
-- 2122. Recover the Original Array — Hard
-- 2130. Maximum Twin Sum of a Linked List — Medium
-- 2149. Rearrange Array Elements by Sign — Medium
-- 2161. Partition Array According to Given Pivot — Medium
-- 2193. Minimum Number of Moves to Make Palindrome — Hard
-- 2200. Find All K-Distant Indices in an Array — Easy
-- 2234. Maximum Total Beauty of the Gardens — Hard
-- 2300. Successful Pairs of Spells and Potions — Medium
-- 2330. Valid Palindrome IV — Medium
-- 2332. The Latest Time to Catch a Bus — Medium
-- 2337. Move Pieces to Obtain a String — Medium
-- 2367. Number of Arithmetic Triplets — Easy
-- 2396. Strictly Palindromic Number — Medium
-- 2406. Divide Intervals Into Minimum Number of Groups — Medium
-- 2410. Maximum Matching of Players With Trainers — Medium
-- 2422. Merge Operations to Turn Array Into a Palindrome — Medium
-- 2441. Largest Positive Integer That Exists With Its Negative — Easy
-- 2460. Apply Operations to an Array — Easy
-- 2462. Total Cost to Hire K Workers — Medium
-- 2465. Number of Distinct Averages — Easy
-- 2472. Maximum Number of Non-overlapping Palindrome Substrings — Hard
-- 2486. Append Characters to String to Make Subsequence — Medium
-- 2491. Divide Players Into Teams of Equal Skill — Medium
-- 2503. Maximum Number of Points From Grid Queries — Hard
-- 2511. Maximum Enemy Forts That Can Be Captured — Easy
-- 2540. Minimum Common Value — Easy
-- 2562. Find the Array Concatenation Value — Easy
-- 2563. Count the Number of Fair Pairs — Medium
-- 2565. Subsequence With the Minimum Score — Hard
-- 2570. Merge Two 2D Arrays by Summing Values — Easy
-- 2576. Find the Maximum Number of Marked Indices — Medium
-- 2592. Maximize Greatness of an Array — Medium
-- 2604. Minimum Time to Eat All Grains — Hard
-- 2674. Split a Circular Linked List — Medium
-- 2697. Lexicographically Smallest Palindrome — Easy
-- 2824. Count Pairs Whose Sum is Less than Target — Easy
-- 2825. Make String a Subsequence Using Cyclic Increments — Medium
-- 2838. Maximum Coins Heroes Can Collect — Medium
-- 2856. Minimum Array Length After Pair Removals — Medium
-- 2868. The Wording Game — Hard
-- 2903. Find Indices With Index and Value Difference I — Easy
-- 2905. Find Indices With Index and Value Difference II — Medium
-- 2911. Minimum Changes to Make K Semi-palindromes — Hard
-- 2938. Separate Black and White Balls — Medium
-- 2970. Count the Number of Incremovable Subarrays I — Easy
-- 2972. Count the Number of Incremovable Subarrays II — Hard
-- 3006. Find Beautiful Indices in the Given Array I — Medium
-- 3008. Find Beautiful Indices in the Given Array II — Hard
-- 3132. Find the Integer Added to Array II — Medium
-- 3186. Maximum Total Damage With Spell Casting — Medium
-- 3194. Minimum Average of Smallest and Largest Elements — Easy
-- 3218. Minimum Cost for Cutting Cake I — Medium
-- 3239. Minimum Number of Flips to Make Binary Grid Palindromic I — Medium
-- 3240. Minimum Number of Flips to Make Binary Grid Palindromic II — Medium
-- 3284. Sum of Consecutive Subarrays — Medium
-- 3302. Find the Lexicographically Smallest Valid Sequence — Medium
-- 3316. Find Maximum Removals From Source String — Medium
-- 3356. Zero Array Transformation II — Medium
-- 3362. Zero Array Transformation III — Medium
-- 3400. Maximum Number of Matching Indices After Right Shifts — Medium
-- 3403. Find the Lexicographically Largest String From the Box I — Medium
-- 3406. Find the Lexicographically Largest String From the Box II — Hard
-- 3455. Shortest Matching Substring — Hard
-- 3460. Longest Common Prefix After at Most One Removal — Medium
-- 3503. Longest Palindrome After Substring Concatenation I — Medium
-- 3504. Longest Palindrome After Substring Concatenation II — Hard
-- 3534. Path Existence Queries in a Graph II — Hard
-- 3555. Smallest Subarray to Sort in Every Sliding Window — Medium
-- 3584. Maximum Product of First and Last Elements of a Subsequence — Medium
-- 3633. Earliest Finish Time for Land and Water Rides I — Easy
-- 3635. Earliest Finish Time for Land and Water Rides II — Medium
-- 3643. Flip Square Submatrix Vertically — Easy
-- 3645. Maximum Total from Optimal Activation Order — Medium
-- 3649. Number of Perfect Pairs — Medium
-- 3667. Sort Array By Absolute Value — Easy
-- 3685. Subsequence Sum After Capping Elements — Medium
-- 3722. Lexicographically Smallest String After Reverse — Medium
-- 3730. Maximum Calories Burnt from Jumps — Medium
-- 3734. Lexicographically Smallest Palindromic Permutation Greater Than Target — Hard
-- 3750. Minimum Number of Flips to Reverse Binary String — Easy
-- 3752. Lexicographically Smallest Negated Permutation that Sums to Target — Medium
-- 3766. Minimum Operations to Make Binary Palindrome — Medium
-- 3775. Reverse Words With Same Vowel Count — Medium
-- 3794. Reverse String Prefix — Easy
-- 3801. Minimum Cost to Merge Sorted Lists — Hard
-- 3814. Maximum Capacity Within Budget — Medium
-- 3823. Reverse Letters Then Special Characters in a String — Easy
-- 3844. Longest Almost-Palindromic Substring — Medium
-- 3865. Reverse K Subarrays — Medium
-- 3867. Sum of GCD of Formed Pairs — Medium
-- 3884. First Matching Character From Both Ends — Easy
-- 3896. Minimum Operations to Transform Array into Alternating Prime — Medium
-- 3936. Minimum Swaps to Move Zeros to End — Easy
-- 3940. Limit Occurrences in Sorted Array — Easy
-- 3983. Subsequence After One Replacement — Medium
-- 3991. Sort Array Using Prefix Reversals — Medium
-- 3992. Rearrange String to Avoid Character Pair — Easy
-- 3998. Transform Binary String Using Subsequence Sort — Medium
-- 3999. Minimum Number of String Groups Through Transformations — Hard
-- 4001. Aggregate Two Time Series — Medium
-- 4014. Minimum Total Price After Applying Discounts — Medium
-- 4026. Maximum Gap Between Stations — Medium
+- [948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/) - Medium
+- [962. Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/) - Medium
+- [969. Pancake Sorting](https://leetcode.com/problems/pancake-sorting/) - Medium
+- [1023. Camelcase Matching](https://leetcode.com/problems/camelcase-matching/) - Medium
+- [1048. Longest String Chain](https://leetcode.com/problems/longest-string-chain/) - Medium
+- [1055. Shortest Way to Form String](https://leetcode.com/problems/shortest-way-to-form-string/) - Medium
+- [1089. Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/) - Easy
+- [1099. Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/) - Easy
+- [1147. Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition/) - Hard
+- [1163. Last Substring in Lexicographical Order](https://leetcode.com/problems/last-substring-in-lexicographical-order/) - Hard
+- [1214. Two Sum BSTs](https://leetcode.com/problems/two-sum-bsts/) - Medium
+- [1229. Meeting Scheduler](https://leetcode.com/problems/meeting-scheduler/) - Medium
+- [1237. Find Positive Integer Solution for a Given Equation](https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/) - Medium
+- [1265. Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse/) - Medium
+- [1332. Remove Palindromic Subsequences](https://leetcode.com/problems/remove-palindromic-subsequences/) - Easy
+- [1346. Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/) - Easy
+- [1385. Find the Distance Value Between Two Arrays](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/) - Easy
+- [1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence](https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/) - Easy
+- [1471. The k Strongest Values in an Array](https://leetcode.com/problems/the-k-strongest-values-in-an-array/) - Medium
+- [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) - Medium
+- [1508. Range Sum of Sorted Subarray Sums](https://leetcode.com/problems/range-sum-of-sorted-subarray-sums/) - Medium
+- [1537. Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) - Hard
+- [1570. Dot Product of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors/) - Medium
+- [1574. Shortest Subarray to be Removed to Make Array Sorted](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted/) - Medium
+- [1577. Number of Ways Where Square of Number Is Equal to Product of Two Numbers](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/) - Medium
+- [1616. Split Two Strings to Make Palindrome](https://leetcode.com/problems/split-two-strings-to-make-palindrome/) - Medium
+- [1634. Add Two Polynomials Represented as Linked Lists](https://leetcode.com/problems/add-two-polynomials-represented-as-linked-lists/) - Medium
+- [1650. Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/) - Medium
+- [1679. Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) - Medium
+- [1697. Checking Existence of Edge Length Limited Paths](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/) - Hard
+- [1712. Ways to Split Array Into Three Subarrays](https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/) - Medium
+- [1721. Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/) - Medium
+- [1750. Minimum Length of String After Deleting Similar Ends](https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/) - Medium
+- [1754. Largest Merge Of Two Strings](https://leetcode.com/problems/largest-merge-of-two-strings/) - Medium
+- [1755. Closest Subsequence Sum](https://leetcode.com/problems/closest-subsequence-sum/) - Hard
+- [1764. Form Array by Concatenating Subarrays of Another Array](https://leetcode.com/problems/form-array-by-concatenating-subarrays-of-another-array/) - Medium
+- [1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) - Easy
+- [1782. Count Pairs Of Nodes](https://leetcode.com/problems/count-pairs-of-nodes/) - Hard
+- [1793. Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/) - Hard
+- [1813. Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/) - Medium
+- [1826. Faulty Sensor](https://leetcode.com/problems/faulty-sensor/) - Easy
+- [1842. Next Palindrome Using Same Digits](https://leetcode.com/problems/next-palindrome-using-same-digits/) - Hard
+- [1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number](https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/) - Medium
+- [1855. Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) - Medium
+- [1861. Rotating the Box](https://leetcode.com/problems/rotating-the-box/) - Medium
+- [1868. Product of Two Run-Length Encoded Arrays](https://leetcode.com/problems/product-of-two-run-length-encoded-arrays/) - Medium
+- [1877. Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) - Medium
+- [1885. Count Pairs in Two Arrays](https://leetcode.com/problems/count-pairs-in-two-arrays/) - Medium
+- [1898. Maximum Number of Removable Characters](https://leetcode.com/problems/maximum-number-of-removable-characters/) - Medium
+- [1960. Maximum Product of the Length of Two Palindromic Substrings](https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/) - Hard
+- [1961. Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/) - Easy
+- [1963. Minimum Number of Swaps to Make the String Balanced](https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/) - Medium
+- [1989. Maximum Number of People That Can Be Caught in Tag](https://leetcode.com/problems/maximum-number-of-people-that-can-be-caught-in-tag/) - Medium
+- [2000. Reverse Prefix of Word](https://leetcode.com/problems/reverse-prefix-of-word/) - Easy
+- [2014. Longest Subsequence Repeated k Times](https://leetcode.com/problems/longest-subsequence-repeated-k-times/) - Hard
+- [2035. Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) - Hard
+- [2046. Sort Linked List Already Sorted Using Absolute Values](https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/) - Medium
+- [2071. Maximum Number of Tasks You Can Assign](https://leetcode.com/problems/maximum-number-of-tasks-you-can-assign/) - Hard
+- [2095. Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) - Medium
+- [2105. Watering Plants II](https://leetcode.com/problems/watering-plants-ii/) - Medium
+- [2108. Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) - Easy
+- [2109. Adding Spaces to a String](https://leetcode.com/problems/adding-spaces-to-a-string/) - Medium
+- [2110. Number of Smooth Descent Periods of a Stock](https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/) - Medium
+- [2122. Recover the Original Array](https://leetcode.com/problems/recover-the-original-array/) - Hard
+- [2130. Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/) - Medium
+- [2149. Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/) - Medium
+- [2161. Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot/) - Medium
+- [2193. Minimum Number of Moves to Make Palindrome](https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/) - Hard
+- [2200. Find All K-Distant Indices in an Array](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/) - Easy
+- [2234. Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/) - Hard
+- [2300. Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) - Medium
+- [2330. Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv/) - Medium
+- [2332. The Latest Time to Catch a Bus](https://leetcode.com/problems/the-latest-time-to-catch-a-bus/) - Medium
+- [2337. Move Pieces to Obtain a String](https://leetcode.com/problems/move-pieces-to-obtain-a-string/) - Medium
+- [2367. Number of Arithmetic Triplets](https://leetcode.com/problems/number-of-arithmetic-triplets/) - Easy
+- [2396. Strictly Palindromic Number](https://leetcode.com/problems/strictly-palindromic-number/) - Medium
+- [2406. Divide Intervals Into Minimum Number of Groups](https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/) - Medium
+- [2410. Maximum Matching of Players With Trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/) - Medium
+- [2422. Merge Operations to Turn Array Into a Palindrome](https://leetcode.com/problems/merge-operations-to-turn-array-into-a-palindrome/) - Medium
+- [2441. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) - Easy
+- [2460. Apply Operations to an Array](https://leetcode.com/problems/apply-operations-to-an-array/) - Easy
+- [2462. Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/) - Medium
+- [2465. Number of Distinct Averages](https://leetcode.com/problems/number-of-distinct-averages/) - Easy
+- [2472. Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/) - Hard
+- [2486. Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/) - Medium
+- [2491. Divide Players Into Teams of Equal Skill](https://leetcode.com/problems/divide-players-into-teams-of-equal-skill/) - Medium
+- [2503. Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/) - Hard
+- [2511. Maximum Enemy Forts That Can Be Captured](https://leetcode.com/problems/maximum-enemy-forts-that-can-be-captured/) - Easy
+- [2540. Minimum Common Value](https://leetcode.com/problems/minimum-common-value/) - Easy
+- [2562. Find the Array Concatenation Value](https://leetcode.com/problems/find-the-array-concatenation-value/) - Easy
+- [2563. Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/) - Medium
+- [2565. Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/) - Hard
+- [2570. Merge Two 2D Arrays by Summing Values](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/) - Easy
+- [2576. Find the Maximum Number of Marked Indices](https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/) - Medium
+- [2592. Maximize Greatness of an Array](https://leetcode.com/problems/maximize-greatness-of-an-array/) - Medium
+- [2604. Minimum Time to Eat All Grains](https://leetcode.com/problems/minimum-time-to-eat-all-grains/) - Hard
+- [2674. Split a Circular Linked List](https://leetcode.com/problems/split-a-circular-linked-list/) - Medium
+- [2697. Lexicographically Smallest Palindrome](https://leetcode.com/problems/lexicographically-smallest-palindrome/) - Easy
+- [2824. Count Pairs Whose Sum is Less than Target](https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/) - Easy
+- [2825. Make String a Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/) - Medium
+- [2838. Maximum Coins Heroes Can Collect](https://leetcode.com/problems/maximum-coins-heroes-can-collect/) - Medium
+- [2856. Minimum Array Length After Pair Removals](https://leetcode.com/problems/minimum-array-length-after-pair-removals/) - Medium
+- [2868. The Wording Game](https://leetcode.com/problems/the-wording-game/) - Hard
+- [2903. Find Indices With Index and Value Difference I](https://leetcode.com/problems/find-indices-with-index-and-value-difference-i/) - Easy
+- [2905. Find Indices With Index and Value Difference II](https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/) - Medium
+- [2911. Minimum Changes to Make K Semi-palindromes](https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/) - Hard
+- [2938. Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls/) - Medium
+- [2970. Count the Number of Incremovable Subarrays I](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/) - Easy
+- [2972. Count the Number of Incremovable Subarrays II](https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/) - Hard
+- [3006. Find Beautiful Indices in the Given Array I](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/) - Medium
+- [3008. Find Beautiful Indices in the Given Array II](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-ii/) - Hard
+- [3132. Find the Integer Added to Array II](https://leetcode.com/problems/find-the-integer-added-to-array-ii/) - Medium
+- [3186. Maximum Total Damage With Spell Casting](https://leetcode.com/problems/maximum-total-damage-with-spell-casting/) - Medium
+- [3194. Minimum Average of Smallest and Largest Elements](https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/) - Easy
+- [3218. Minimum Cost for Cutting Cake I](https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/) - Medium
+- [3239. Minimum Number of Flips to Make Binary Grid Palindromic I](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/) - Medium
+- [3240. Minimum Number of Flips to Make Binary Grid Palindromic II](https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-ii/) - Medium
+- [3284. Sum of Consecutive Subarrays](https://leetcode.com/problems/sum-of-consecutive-subarrays/) - Medium
+- [3302. Find the Lexicographically Smallest Valid Sequence](https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/) - Medium
+- [3316. Find Maximum Removals From Source String](https://leetcode.com/problems/find-maximum-removals-from-source-string/) - Medium
+- [3356. Zero Array Transformation II](https://leetcode.com/problems/zero-array-transformation-ii/) - Medium
+- [3362. Zero Array Transformation III](https://leetcode.com/problems/zero-array-transformation-iii/) - Medium
+- [3400. Maximum Number of Matching Indices After Right Shifts](https://leetcode.com/problems/maximum-number-of-matching-indices-after-right-shifts/) - Medium
+- [3403. Find the Lexicographically Largest String From the Box I](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/) - Medium
+- [3406. Find the Lexicographically Largest String From the Box II](https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-ii/) - Hard
+- [3455. Shortest Matching Substring](https://leetcode.com/problems/shortest-matching-substring/) - Hard
+- [3460. Longest Common Prefix After at Most One Removal](https://leetcode.com/problems/longest-common-prefix-after-at-most-one-removal/) - Medium
+- [3503. Longest Palindrome After Substring Concatenation I](https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-i/) - Medium
+- [3504. Longest Palindrome After Substring Concatenation II](https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/) - Hard
+- [3534. Path Existence Queries in a Graph II](https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/) - Hard
+- [3555. Smallest Subarray to Sort in Every Sliding Window](https://leetcode.com/problems/smallest-subarray-to-sort-in-every-sliding-window/) - Medium
+- [3584. Maximum Product of First and Last Elements of a Subsequence](https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/) - Medium
+- [3633. Earliest Finish Time for Land and Water Rides I](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/) - Easy
+- [3635. Earliest Finish Time for Land and Water Rides II](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/) - Medium
+- [3643. Flip Square Submatrix Vertically](https://leetcode.com/problems/flip-square-submatrix-vertically/) - Easy
+- [3645. Maximum Total from Optimal Activation Order](https://leetcode.com/problems/maximum-total-from-optimal-activation-order/) - Medium
+- [3649. Number of Perfect Pairs](https://leetcode.com/problems/number-of-perfect-pairs/) - Medium
+- [3667. Sort Array By Absolute Value](https://leetcode.com/problems/sort-array-by-absolute-value/) - Easy
+- [3685. Subsequence Sum After Capping Elements](https://leetcode.com/problems/subsequence-sum-after-capping-elements/) - Medium
+- [3722. Lexicographically Smallest String After Reverse](https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/) - Medium
+- [3730. Maximum Calories Burnt from Jumps](https://leetcode.com/problems/maximum-calories-burnt-from-jumps/) - Medium
+- [3734. Lexicographically Smallest Palindromic Permutation Greater Than Target](https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/) - Hard
+- [3750. Minimum Number of Flips to Reverse Binary String](https://leetcode.com/problems/minimum-number-of-flips-to-reverse-binary-string/) - Easy
+- [3752. Lexicographically Smallest Negated Permutation that Sums to Target](https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target/) - Medium
+- [3766. Minimum Operations to Make Binary Palindrome](https://leetcode.com/problems/minimum-operations-to-make-binary-palindrome/) - Medium
+- [3775. Reverse Words With Same Vowel Count](https://leetcode.com/problems/reverse-words-with-same-vowel-count/) - Medium
+- [3794. Reverse String Prefix](https://leetcode.com/problems/reverse-string-prefix/) - Easy
+- [3801. Minimum Cost to Merge Sorted Lists](https://leetcode.com/problems/minimum-cost-to-merge-sorted-lists/) - Hard
+- [3814. Maximum Capacity Within Budget](https://leetcode.com/problems/maximum-capacity-within-budget/) - Medium
+- [3823. Reverse Letters Then Special Characters in a String](https://leetcode.com/problems/reverse-letters-then-special-characters-in-a-string/) - Easy
+- [3844. Longest Almost-Palindromic Substring](https://leetcode.com/problems/longest-almost-palindromic-substring/) - Medium
+- [3865. Reverse K Subarrays](https://leetcode.com/problems/reverse-k-subarrays/) - Medium
+- [3867. Sum of GCD of Formed Pairs](https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/) - Medium
+- [3884. First Matching Character From Both Ends](https://leetcode.com/problems/first-matching-character-from-both-ends/) - Easy
+- [3896. Minimum Operations to Transform Array into Alternating Prime](https://leetcode.com/problems/minimum-operations-to-transform-array-into-alternating-prime/) - Medium
+- [3936. Minimum Swaps to Move Zeros to End](https://leetcode.com/problems/minimum-swaps-to-move-zeros-to-end/) - Easy
+- [3940. Limit Occurrences in Sorted Array](https://leetcode.com/problems/limit-occurrences-in-sorted-array/) - Easy
+- [3983. Subsequence After One Replacement](https://leetcode.com/problems/subsequence-after-one-replacement/) - Medium
+- [3991. Sort Array Using Prefix Reversals](https://leetcode.com/problems/sort-array-using-prefix-reversals/) - Medium
+- [3992. Rearrange String to Avoid Character Pair](https://leetcode.com/problems/rearrange-string-to-avoid-character-pair/) - Easy
+- [3998. Transform Binary String Using Subsequence Sort](https://leetcode.com/problems/transform-binary-string-using-subsequence-sort/) - Medium
+- [3999. Minimum Number of String Groups Through Transformations](https://leetcode.com/problems/minimum-number-of-string-groups-through-transformations/) - Hard
+- [4001. Aggregate Two Time Series](https://leetcode.com/problems/aggregate-two-time-series/) - Medium
+- [4014. Minimum Total Price After Applying Discounts](https://leetcode.com/problems/minimum-total-price-after-applying-discounts/) - Medium
+- [4026. Maximum Gap Between Stations](https://leetcode.com/problems/maximum-gap-between-stations/) - Medium
