@@ -1,0 +1,3 @@
+[submodule "Deep-ML"]
+	path = Deep-ML
+	url = https://github.com/HIMANSHU8HBK/Deep-ML.git
