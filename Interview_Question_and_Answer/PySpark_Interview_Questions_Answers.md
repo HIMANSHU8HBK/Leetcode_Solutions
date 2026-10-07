@@ -5808,3 +5808,92 @@ Spark **shuffles data** when it needs to **move data across partitions** (e.g., 
 ---
 
 Would you like a cheat sheet PDF of Spark optimization best practices?
+
+
+## Additional source answer: Spark SQL
+
+Copied from [Questions](https://chatgpt.com/share/68592933-196c-8003-9b79-753a9419fb0e), this answer provides a fuller explanation and examples for the Spark SQL questions already included above.
+
+Great questions! Let’s break them down one by one:
+
+---
+
+### ✅ What is the use of Spark SQL?
+
+### 🔹 Spark SQL is the module in Apache Spark that allows:
+
+- Executing **SQL queries** on structured and semi-structured data.
+- Seamlessly combining **SQL queries with DataFrame/Dataset API**.
+- Connecting with **BI tools** (like Tableau) via **JDBC/ODBC**.
+- Using **HiveQL**, and even integrating with **Hive metastore**.
+
+---
+
+### ✅ Why use Spark SQL?
+
+| Benefit | Description |
+| --- | --- |
+| Familiar Syntax | Use standard SQL queries on Big Data. |
+| Unified API | Combine SQL with Python, Scala, Java code. |
+| Optimization | Leverages Catalyst Optimizer and Tungsten execution engine for performance. |
+| Schema Discovery | Automatically infers schema on semi-structured data (JSON, CSV). |
+
+---
+
+### ✅ How do you run SQL queries on DataFrames?
+
+### 🔹 Step-by-step:
+
+```python
+# 1. Create SparkSession
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName("Example").getOrCreate()
+
+# 2. Create or load a DataFrame
+df = spark.read.csv("people.csv", header=True, inferSchema=True)
+
+# 3. Register the DataFrame as a temporary table
+df.createOrReplaceTempView("people")
+
+# 4. Run SQL query
+result_df = spark.sql("SELECT name, age FROM people WHERE age > 30")
+result_df.show()
+```
+
+---
+
+### ✅ How to register a DataFrame as a temporary SQL table?
+
+| Method | Description |
+| --- | --- |
+| createOrReplaceTempView("table") | Registers the DataFrame as a temporary view, scoped to the current Spark session. |
+| createGlobalTempView("table") | Registers as a global temp view (accessible across sessions using global_temp.table). |
+
+### Example:
+
+```python
+df.createOrReplaceTempView("sales")      # local temp view
+df.createGlobalTempView("global_sales")  # global temp view
+```
+
+### 🔍 Query global temp view:
+
+```python
+spark.sql("SELECT * FROM global_temp.global_sales").show()
+```
+
+---
+
+### ✅ Summary Table
+
+| Action | Code Example |
+| --- | --- |
+| Create Spark session | SparkSession.builder...getOrCreate() |
+| Load DataFrame | spark.read.csv(...) |
+| Register temp view | df.createOrReplaceTempView("table") |
+| Register global temp view | df.createGlobalTempView("table") |
+| Run SQL query | spark.sql("SELECT * FROM table") |
+
+---
+
+Would you like a **starter notebook template** using Spark SQL with CSV or Parquet input?
