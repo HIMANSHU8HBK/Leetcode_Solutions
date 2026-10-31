@@ -41,25 +41,41 @@ This guide does not assert candidate-recalled questions as verified or current N
 
 **Answer:**
 
-<br><br><br>
+CUDA launches a grid of thread blocks. A block contains threads that can cooperate through shared memory and block-level synchronization; the GPU schedules blocks onto streaming multiprocessors (SMs). Within an SM, threads execute in warps (commonly 32 lanes on current NVIDIA GPUs), so a warp is the main unit of instruction issue. A thread has its own registers and logical index, while block and grid dimensions define how work maps to data.
+
+For an elementwise operation, each thread might process one or several contiguous elements, with its global index computed from block and thread indices. Adjacent lanes should generally access adjacent addresses so memory transactions are coalesced. Blocks should expose enough independent work to occupy the GPU, but their register/shared-memory footprint affects how many resident blocks and warps fit on an SM. Too few blocks can underutilize the device; too many tiny blocks can add scheduling overhead.
+
+The right mapping depends on the workload: reductions need cooperation and staged partial results, while matrix operations use tiles and data reuse. I would profile occupancy, memory transactions, register pressure, and runtime rather than assume a particular block size is optimal.
 
 ### 2. [Practice prompt] How would you identify whether a GPU kernel is compute-bound, memory-bandwidth-bound, or limited by launch and synchronization overhead?
 
 **Answer:**
 
-<br><br><br>
+I would first measure the kernel in isolation and in the end-to-end workload, with warm-up, repeated runs, synchronized timing, and representative input sizes. Compare measured operations and bytes moved with hardware peak estimates using a roofline-style analysis: low achieved bandwidth near the memory ceiling suggests bandwidth limitation, while high arithmetic throughput near the compute ceiling suggests compute limitation. The operation-intensity estimate helps interpret the result, but profiling counters confirm it.
+
+Use Nsight Systems to see launch gaps, synchronization, copies, CPU submission time, and stream overlap; use Nsight Compute for per-kernel throughput, memory behavior, occupancy, stalls, and instruction mix. If the kernel is very short, launch overhead may dominate—especially for small inputs or many tiny kernels. Compare a fused or batched variant and measure end-to-end latency rather than extrapolating from one launch.
+
+Change one factor at a time: data layout/tiling for bandwidth, arithmetic or instruction mix for compute, and fusion/batching/graph capture for launch overhead. Check correctness and numerical behavior after each change. Avoid concluding from utilization alone; low utilization may be a symptom of insufficient parallelism, dependency stalls, or measurement setup.
 
 ### 3. [Practice prompt] What are coalesced memory accesses, and how can poor access patterns reduce effective GPU bandwidth?
 
 **Answer:**
 
-<br><br><br>
+When lanes in a warp access nearby, suitably aligned addresses, the hardware can service them with a small number of memory transactions. This is called coalescing. If each lane accesses a far-apart location, a warp may require many transactions to fetch the same useful number of bytes, wasting bandwidth and cache capacity.
+
+For example, consecutive threads reading consecutive elements of a row-major array are typically coalesced. If lanes instead stride across columns with a large leading dimension, accesses may touch separate memory segments. A transpose or gather can therefore be much slower unless the algorithm changes its tiling or uses shared memory to rearrange data.
+
+I would inspect the access pattern and profiler metrics for transactions, sectors, cache behavior, and achieved bandwidth, then compare with a contiguous baseline. Potential fixes include changing thread-to-data mapping, using a tiled transpose, improving layout, or fusing work to reuse loaded data. Coalescing is not the only factor—cache reuse, alignment, vectorization, and occupancy also matter—so validate with measurements on the target shape and GPU.
 
 ### 4. [Practice prompt] When would you use shared memory rather than global memory, and what synchronization and occupancy trade-offs would you consider?
 
 **Answer:**
 
-<br><br><br>
+Shared memory is useful when threads in a block repeatedly reuse data or need to communicate intermediate values—for example, tiled matrix multiplication, reductions, or staging a transposed tile. It is an on-chip software-managed resource with much lower latency than device memory, but it is limited per SM and per block, so it does not replace global memory for large or one-pass data.
+
+Load a tile cooperatively, synchronize before consumers read it, and synchronize again before a buffer is reused if threads may still be reading it. `__syncthreads()` only coordinates threads in the same block; it does not create a grid-wide barrier. All participating threads must reach a block barrier consistently, or the kernel can hang or behave incorrectly. Avoid read/write races and use the appropriate memory ordering for asynchronous copy pipelines.
+
+More shared memory per block can reduce the number of resident blocks and lower occupancy; padding may also be needed to avoid bank conflicts. But maximizing occupancy is not automatically best if shared memory substantially reduces global traffic. Profile the reuse benefit, bank conflicts, synchronization cost, and residency together, and choose tile sizes empirically.
 
 ### 5. [Practice prompt] Explain warp divergence and give examples of control flow that can make a kernel inefficient.
 

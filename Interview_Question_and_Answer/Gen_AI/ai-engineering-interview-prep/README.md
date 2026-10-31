@@ -31,10 +31,12 @@ A topic-organized study workspace containing the source interview questions/prom
 
 See [SOURCE_ATTRIBUTION.md](SOURCE_ATTRIBUTION.md) for the source revision and attribution.
 
-## Company-wise interview banks
+## Role and company-specific preparation guides
 
 Company-specific, research-attributed preparation guides are kept separately from the source-derived topic modules:
 
+- [Applied AI Engineer — end-to-end role guide](roles/applied-ai-engineer.md)
+- [Generative AI role landscape](company-wise/genai-role-landscape.md) — recurring role families and how to map job descriptions to preparation areas
 - [Company-wise bank index](company-wise/README.md)
 - [NVIDIA — AI / ML Engineer](company-wise/nvidia-ai-engineer.md)
 - [Google DeepMind — AI / ML Engineer](company-wise/google-deepmind-ai-engineer.md)
