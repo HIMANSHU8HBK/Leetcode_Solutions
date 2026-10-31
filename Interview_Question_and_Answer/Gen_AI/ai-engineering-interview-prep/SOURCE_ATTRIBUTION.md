@@ -17,3 +17,11 @@ The interview questions and prompts in this workspace are reproduced from the `R
 - The separate introductory **Must Know** section was intentionally excluded per the requested scope.
 - Some source list items are labels rather than interrogative sentences (for example, `KV Cache Compression`, `Vectorless RAG`, and `AI Agent Evaluation`). These are preserved exactly as written and included in the corresponding topic files.
 - No unresolved extraction ambiguities were identified.
+
+## Supplemental module
+
+The questions in [topic 15](topics/15-emerging-ai-engineering-topics.md) are original supplemental prompts informed by the current official engineering references listed in that file. They are not reproduced from the source repository and are not presented as a verified ranking of interview frequency.
+
+## Company-wise interview guides
+
+Company-specific guides are maintained in [company-wise](company-wise/README.md) and cite their own official and public research sources. Their original practice questions are not part of the 14-topic extraction and are not claimed to be verbatim company interview questions.
